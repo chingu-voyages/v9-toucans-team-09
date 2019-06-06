@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+main {
+    display: grid;
+    grid-template-rows: repeat(4, minmax(70vh, 100%));
+    grid-template-columns: 100vw;
+}
+
+section {
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+    /*example color*/
+    background-color: rgb(114, 129, 124);
+}
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.hero article {
+    /*example color*/
+    background-color: rgb(92, 105, 101);
+}
+
+.impact .cards {
+    display: grid;
+    grid-template-columns: repeat(3, calc(100% / 3));
+    grid-template-rows: minmax(40vh, 100%);
+    
+    /*example color*/
+    background-color: rgb(92, 105, 101);
+}
+
+.mailing-list .media {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    /*example color*/
+    background-color: rgb(92, 105, 101);
+}
+
+.cta .cards {
+    display: grid; 
+    grid-template-columns: repeat(3, calc(100% / 3));
+    grid-template-rows: minmax(40vh, 100%);
+    
+    /*example color*/
+    background-color: rgb(92, 105, 101);
+}
+
+.promo {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.promo article {
+    grid-column-start: 2;
+
+    /*example color*/
+    background-color: rgb(92, 105, 101);
+}
