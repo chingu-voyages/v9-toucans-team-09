@@ -7,7 +7,7 @@ body {
 
 main {
     display: grid;
-    grid-template-rows: repeat(4, minmax(70vh, 100%));
+    grid-template-rows: repeat(4, minmax(70vh, auto));
     grid-template-columns: 100vw;
 }
 
@@ -17,6 +17,13 @@ section {
 
     /*example color*/
     background-color: rgb(114, 129, 124);
+}
+button {
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 0px 20px;
+    text-transform: uppercase;
 }
 .hero {
     display: grid;
