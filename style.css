@@ -1,66 +1,125 @@
 body {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif; /* Paskwa Jun 7, 2019 */
 }
 
 main {
-    display: grid;
-    grid-template-rows: repeat(4, minmax(70vh, 100%));
-    grid-template-columns: 100vw;
+  display: grid;
+  grid-template-rows: repeat(
+    4,
+    minmax(50vh, 100%)
+  ); /* Paskwa - changed rows to 5 from 4; 50vh from 70vh, Fri jun 7, 2019*/
+  grid-template-columns: 100vw;
+}
+
+/* Paskwa - Fri Jun 7, 2019 */
+
+header {
+  max-height: 100px;
+}
+
+/* Navigation */
+
+.menu ul {
+  display: grid;
+  grid-gap: 10px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(12, minmax(130px, 1fr));
+  /* grid-template-columns: repeat(12, 1fr); */
+}
+
+#logo {
+  grid-column: 2 / 3;
+}
+
+.water {
+  order: 2;
+}
+
+.sign {
+  grid-column-end: -1;
+}
+
+.menu a {
+  /* background: var(--yellow); */
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+[aria-controls='menu-list'] {
+  display: none;
+}
+/* Paskwa - Fri Jun 7, 2019 */
+
+.top {
+  height: 500px;
+  background-image: url('./assets/background images/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 section {
-    padding-left: 10vw;
-    padding-right: 10vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
 
-    /*example color*/
-    background-color: rgb(114, 129, 124);
+  /*example color*/
+  /* background-color: rgb(114, 129, 124); */
 }
 .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .hero article {
-    /*example color*/
-    background-color: rgb(92, 105, 101);
+  /*example color*/
+  /* background-color: rgb(92, 105, 101); */
+  color: white;
 }
 
 .impact .cards {
-    display: grid;
-    grid-template-columns: repeat(3, calc(100% / 3));
-    grid-template-rows: minmax(40vh, 100%);
-    
-    /*example color*/
-    background-color: rgb(92, 105, 101);
+  display: grid;
+  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-template-rows: minmax(40vh, 100%);
+
+  /*example color*/
+  background-color: rgb(92, 105, 101);
 }
 
 .mailing-list .media {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
-    /*example color*/
-    background-color: rgb(92, 105, 101);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  /*example color*/
+  background-color: rgb(92, 105, 101);
 }
 
 .cta .cards {
-    display: grid; 
-    grid-template-columns: repeat(3, calc(100% / 3));
-    grid-template-rows: minmax(40vh, 100%);
-    
-    /*example color*/
-    background-color: rgb(92, 105, 101);
+  display: grid;
+  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-template-rows: minmax(40vh, 100%);
+
+  /*example color*/
+  background-color: rgb(92, 105, 101);
 }
 
 .promo {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .promo article {
-    grid-column-start: 2;
+  grid-column-start: 2;
 
-    /*example color*/
-    background-color: rgb(92, 105, 101);
+  /*example color*/
+  background-color: rgb(92, 105, 101);
 }
