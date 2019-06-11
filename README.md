@@ -38,6 +38,10 @@ You can review the site [coming soon](https://docs.google.com/presentation/d/11z
 
 * WS3Schools. [CSS Grid layout module](https://www.w3schools.com/css/css_grid.asp)
 
+* The Joomlashack Blog. [CSS Grid #23: Building a Hamburger Icon Menu](https://www.joomlashack.com/blog/tutorials/css-grid-23-building-a-hamburger-icon-menu/)
+
+* Costello's blog article [Making a responsive navbar with just HTML & CSS Grid](https://modern-css.com/responsive-navbar-with-css-grid.html)
+
 ## Screenshot
 
 ![homepage coming soon]()
