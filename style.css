@@ -50,16 +50,82 @@ button {
     /*example color*/
     background-color: rgb(92, 105, 101);
 }
-
+.cta {
+    padding: 0;
+    margin-top: 50px;
+}
 .cta .cards {
     display: grid; 
     grid-template-columns: repeat(3, calc(100% / 3));
     grid-template-rows: minmax(40vh, 100%);
-    
-    /*example color*/
-    background-color: rgb(92, 105, 101);
-}
+    grid-gap: 10px;
+    background-color: rgb(255, 255, 255);
 
+}
+.cta .cards article {
+    color: rgb(255, 255, 255);
+}
+.cta .cards img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+.cta .cards p{
+    margin: 20px;
+}
+.cta .cards #info {
+    background-color: rgb(54, 159, 244);
+}
+.cta .cards #info button{
+    background-color: rgb(41, 112, 166);
+}
+.cta .cards #fundraise {
+    background-color: rgb(144, 101, 190);
+}
+.cta .cards #fundraise button{
+    background-color: rgb(98, 64, 135);
+}
+.cta .cards #donate {
+    background-color: rgb(142, 212, 204);
+}
+.cta .cards #donate button{
+    background-color: rgb(71, 173, 160);
+}
+.cta .cards #watch {
+    background-color: rgb(254, 129, 57);
+}
+.cta .cards #watch button{
+    background-color: rgb(211, 89, 19);
+}
+.cta .cards #pledge {
+    background-color: rgb(250, 88, 93);
+}
+.cta .cards #pledge button{
+    background-color: rgb(220, 38, 46);
+}
+.cta .cards #monthly {
+    background-color: rgb(227, 243, 250);
+    color: rgb(0, 0, 0)
+}
+.cta .cards #monthly button{
+    background-color: rgb(1, 172, 127);
+}
+.cta .sponsor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(90vh, auto);
+    background-image: url("assets/background images/cta-large.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    place-items: center;
+}
+.cta .sponsor article{
+    grid-column-start: 2;
+}
+.cta .sponsor button {
+    background-color: rgb(54, 159, 244);
+}
 .promo {
     display: grid;
     grid-template-columns: 1fr 2fr;
