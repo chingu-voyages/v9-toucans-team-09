@@ -98,26 +98,28 @@ button {
 } */
 
 .card-slider {
-  grid-template-columns: repeat(3, calc(100% / 5));
+  grid-template-columns: repeat(3, calc(100% / 4));
   grid-template-rows: minmax(50vh, 40%);
   border: block 15px red;
   /* margin: 8% auto 10% auto; */
   position: absolute;
-  top: 40%;
+  top: 25%;
   right: 10%;
   overflow: visible;
   list-style: none;
   padding: 0;
   z-index: 1;
   display: grid;
+  width: auto;
+  max-height: 360px;
 }
 
-.costs {
+/* .costs {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
-}
+} */
 
 #impact-header {
   /* display: grid;
@@ -130,35 +132,35 @@ button {
   height: 80px;
   /* padding: 10px; */
   text-align: center;
-  background-color: rgb(92, 105, 101);
+  /* background-color: rgb(92, 105, 101); */
 }
 
-.card {
-  display: grid;
-  grid-template-columns: repeat(3, calc(100% / 3));
-  grid-template-rows: minmax(20vh, auto);
-
-  /*example color*/
-  background-color: rgb(92, 105, 101);
-  text-align: center;
+.impact-card {
+  max-height: 350px;
 }
 
 .card p {
   font-size: 14px;
 }
 
+/* .card-body {
+  width: auto;
+  height: auto;
+} */
 .card-title {
   text-transform: uppercase;
   font-size: 19px;
 }
 
-/* .card {
-  color: black;
-  font: 16px;
-  padding: 10px 0px;
-  width: 50px;
-  height: auto;
-} */
+.impact-model {
+  position: absolute;
+  bottom: 26%;
+  left: 30%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 10px;
+  max-width: 40%;
+}
 
 .card-img-top {
   max-width: 140px;
