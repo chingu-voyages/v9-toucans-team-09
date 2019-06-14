@@ -1,73 +1,170 @@
 body {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 main {
-    display: grid;
-    grid-template-rows: repeat(4, minmax(70vh, auto));
-    grid-template-columns: 100vw;
+  display: grid;
+  grid-template-rows: repeat(4, minmax(20vh, auto));
+  grid-template-columns: 100vw; /*has no impact on nav and impact */
 }
 
 section {
-    padding-left: 10vw;
-    padding-right: 10vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
 
-    /*example color*/
-    background-color: rgb(114, 129, 124);
+  /*example color*/
+  background-color: rgb(114, 129, 124);
 }
 button {
-    border-radius: 4px;
-    color: rgb(255, 255, 255);
-    font-size: 15px;
-    padding: 0px 20px;
-    text-transform: uppercase;
-}
-.hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.hero article {
-    /*example color*/
-    background-color: rgb(92, 105, 101);
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  padding: 0px 20px;
+  text-transform: uppercase;
 }
 
-.impact .cards {
-    display: grid;
-    grid-template-columns: repeat(3, calc(100% / 3));
-    grid-template-rows: minmax(40vh, 100%);
-    
-    /*example color*/
-    background-color: rgb(92, 105, 101);
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero article {
+  /*example color*/
+  background-color: rgb(92, 105, 101);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-template-rows: minmax(40vh, 100%);
+
+  /*example color*/
+  background-color: rgb(92, 105, 101);
 }
 
 .mailing-list .media {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
-    /*example color*/
-    background-color: rgb(92, 105, 101);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  /*example color*/
+  background-color: rgb(92, 105, 101);
 }
 
 .cta .cards {
-    display: grid; 
-    grid-template-columns: repeat(3, calc(100% / 3));
-    grid-template-rows: minmax(40vh, 100%);
-    
-    /*example color*/
-    background-color: rgb(92, 105, 101);
+  display: grid;
+  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-template-rows: minmax(40vh, 100%);
+
+  /*example color*/
+  background-color: rgb(92, 105, 101);
 }
 
 .promo {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .promo article {
-    grid-column-start: 2;
+  grid-column-start: 2;
 
-    /*example color*/
-    background-color: rgb(92, 105, 101);
+  /*example color*/
+  background-color: rgb(92, 105, 101);
 }
+
+/* Paskwa Fri Jun 14 */
+
+.impact {
+  display: grid;
+  grid-template-rows: 80vh;
+  background-image: url('./assets/background images/impact-large.jpg');
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* .slider {
+  background: #fff;
+  border: 2px solid #f1f1f0;
+  padding: 40px 10px;
+  border-radius: 4px;
+  transition: border-color 0.15s linear;
+}
+
+.slider-active {
+  border-color: #c1c1ba;
+} */
+
+.card-slider {
+  grid-template-columns: repeat(3, calc(100% / 5));
+  grid-template-rows: minmax(50vh, 40%);
+  border: block 15px red;
+  /* margin: 8% auto 10% auto; */
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  overflow: visible;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: grid;
+}
+
+.costs {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+#impact-header {
+  /* display: grid;
+  grid-row: auto; */
+  margin: 0 auto;
+  font-size: 1.5em;
+  max-width: 720px;
+  padding: 0;
+  /* margin: 5% auto auto auto; */
+  height: 80px;
+  /* padding: 10px; */
+  text-align: center;
+  background-color: rgb(92, 105, 101);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-template-rows: minmax(20vh, auto);
+
+  /*example color*/
+  background-color: rgb(92, 105, 101);
+  text-align: center;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-size: 19px;
+}
+
+/* .card {
+  color: black;
+  font: 16px;
+  padding: 10px 0px;
+  width: 50px;
+  height: auto;
+} */
+
+.card-img-top {
+  max-width: 140px;
+  max-height: 140px;
+  /* position: relative;
+  top: 5px; */
+  margin: 2% auto;
+}
+/* end of Paskwa Fri Jun 14 */
