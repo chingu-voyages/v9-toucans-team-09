@@ -1,0 +1,125 @@
+.water-impact {
+  display: grid;
+  /* grid-template-columns: repeat(3, calc(100% / 3)); Paskwa Tue Jun 11*/
+  /* grid-template-columns: repeat(3, auto);*/
+  grid-template-rows: minmax(40vh, 80vh);
+  /* grid-template-rows: minmax(40vh, auto); Paskwa - Tue Jun 11 */
+
+  /*example color*/
+  background-color: rgb(92, 105, 101);
+  background-image: url('../background images/impact-large.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  /* margin-top: 1%; */
+  padding-bottom: 30%;
+}
+
+.water-cards {
+  display: grid;
+  /* grid-template-columns: repeat(3, calc(100% / 3)); */
+  grid-template-rows: minmax(100vh, 100%);
+
+  margin-top: 2%;
+
+  /*example color*/
+  /* background-color: rgb(92, 105, 101); */
+}
+
+.impact-card {
+  display: grid;
+  grid-template-columns: repeat(3, calc(100% / 3));
+}
+
+.impact-hundred {
+  margin-top: 20px;
+}
+
+.impact-private {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .h2-impact {
+  max-width: 720px;
+  text-align: center;
+  padding-top: 50px;
+  margin: 0 auto;
+} */
+
+/* .hundred {
+  position: relative;
+  bottom: 2rem;
+} */
+
+.impactcard-img {
+  width: 200px;
+  height: 200px;
+  margin: 5px auto;
+}
+
+/* .impact-card {
+  border: solid 2px lightgrey;
+  width: 150px;
+  border-radius: 4px;
+} */
+
+.impact-list {
+  list-style: none;
+  margin: 2em;
+  display: grid;
+  grid-gap: -1px;
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 350px)); */
+  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-template-rows: minmax(30vh, 50vh);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 10% 0 10%;
+  padding-top: 40px;
+}
+.impact-list li {
+  border: 2px solid lightgray;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+.impact-list .cta {
+  margin-top: auto;
+
+  padding: 10px;
+  text-align: center;
+}
+
+.impact-list a {
+  text-decoration: none;
+  color: blue;
+}
+.impact-list .impact-body {
+  padding: 10px;
+}
+
+.impactcard-heading {
+  text-transform: uppercase;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.card-slider {
+  /* margin: auto; */
+  border: 10px solid red;
+  max-width: 1440px;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 95%;
+  left: 15%;
+  opacity: 0.35;
+}
+
+.impact-active {
+  border: gray solid 3px;
+  transform: scale(1.1); /* 110% zoom*/
+}
+
+.impact-inactive {
+  /* border: gray solid 3px; */
+}

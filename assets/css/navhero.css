@@ -1,0 +1,275 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Paskwa Tue Jun 11 */
+.hero h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 1.1em;
+}
+
+.hero h1 {
+  font-size: 28px;
+}
+
+.hero p {
+  font-size: 19px;
+}
+/* Paskwa Tue June 11 */
+
+main {
+  display: grid;
+  grid-template-rows: repeat(4, minmax(70vh, auto));
+  grid-template-columns: 100vw;
+  grid-row-gap: 0;
+}
+
+button {
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  padding: 0px 20px;
+  text-transform: uppercase;
+}
+
+section {
+  padding-left: 10vw;
+  padding-right: 10vw;
+
+  /*example color*/
+  /* background-color: rgb(114, 129, 124); */
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* background-color: red; */
+  padding-top: 90px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hero article {
+  /*example color*/
+  /* background-color: rgb(92, 105, 101); */
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .impact .cards {
+  display: grid;
+  /* grid-template-columns: repeat(3, calc(100% / 3)); Paskwa Tue Jun 11*/
+/* grid-template-columns: repeat(3, auto); */
+/* grid-template-rows: minmax(40vh, 100%); */
+/*  grid-template-rows: minmax(40vh, auto); Paskwa - Tue Jun 11 */
+
+/*example color
+  background-color: rgb(92, 105, 101);
+} */
+
+.mailing-list .media {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  /*example color*/
+  background-color: rgb(92, 105, 101);
+}
+
+.cta .cards {
+  display: grid;
+  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-template-rows: minmax(40vh, 100%);
+
+  /* examplecolor */
+  background-color: rgb(92, 105, 101);
+}
+
+.promo {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.promo article {
+  grid-column-start: 2;
+
+  /*example color*/
+  background-color: rgb(92, 105, 101);
+}
+
+/* Paskwa Tue Jun 11 */
+.nav-container {
+  width: 100%;
+  /* background: black; */
+  max-height: 150px;
+}
+
+nav {
+  /* max-width: 1720px; */
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+
+  display: grid;
+  grid-template-columns: 7vw 4fr auto 2fr 1fr 2vw;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#logo {
+  text-transform: lowercase;
+  font-family: 'Times New Roman', Times, serif;
+  font-stretch: expanded;
+  font-weight: bold;
+}
+
+.left-menu {
+  grid-column: 2;
+}
+
+.right-menu {
+  grid-column: 4;
+}
+
+.hamburger {
+  grid-column: 5;
+  color: white;
+  font-size: 3rem;
+  justify-self: end;
+}
+
+.wrapper {
+  background-image: url('../background images/hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.menu a {
+  /* padding: 20px 0; */
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.btn {
+  display: inline-block;
+  align-content: center;
+  border: solid 2px white;
+  border-radius: 10%;
+  padding: 5px;
+}
+
+.spring-img {
+  background-image: url('../images/spring-logo-white.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 85px;
+  /* margin-top: 20px; */
+  margin: 0 auto;
+}
+
+.spring-btn {
+  background-color: #00ac77;
+  margin: 10px 0 0;
+  padding: 0 20px;
+  height: 48px;
+  line-height: 48px;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.1em;
+  /* border-radius: 4px; */
+  border: 0;
+  font-size: 15px;
+  font-weight: 500;
+  display: inline-block;
+  color: #fff;
+}
+
+/* #water-impact {
+  background-color: #00ac77;
+  background-origin: padding-box;
+  border: solid 10px red;
+} */
+
+/* Paskwa Tue Jun 11 */
+
+/* MEDIA QUERIES  /* Paskwa Tue Jun 11 */
+@media screen and (max-width: 1024px) {
+  /* .wrapper {
+    background-color: aliceblue;
+    background-image: url ();
+  } */
+
+  .wrapper {
+    background-color: azure;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url();
+    background-size: cover;
+    content: '';
+    height: 100%;
+    width: 100%;
+    display: grid;
+    /* grid-template-rows: 3 1fr; */
+  }
+
+  .hero {
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    background-color: azure;
+    background-position: top;
+    background-repeat: no-repeat;
+    /* background-image: url('./background images/hero-mobile.jpg'); */
+    background-image: url('../background images/hero-mobile.jpg');
+    background-size: contain;
+    content: '';
+    height: 100%;
+    width: 100%;
+  }
+
+  .hero article {
+    /*example color*/
+    /* background-color: rgb(92, 105, 101); */
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .left-menu {
+    grid-row: 2;
+    grid-column: 2 / 5;
+    background-color: #000;
+  }
+
+  .left-menu a {
+    grid-template-columns: 1fr;
+    height: calc(80vh - 70px);
+    align-content: space-evenly;
+    color: #fff;
+  }
+
+  .spring-img {
+    background-image: url('../images/_spring-logo.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 200px;
+    height: 85px;
+    /* margin-top: 20px; */
+    margin: 0 auto;
+  }
+}
