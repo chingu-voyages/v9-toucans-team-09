@@ -129,12 +129,21 @@ nav a {
   font-weight: bold;
 }
 
-#logo {
-  text-transform: lowercase;
+#logo img {
+  /* text-transform: lowercase;
   font-family: 'Times New Roman', Times, serif;
   font-stretch: expanded;
-  font-weight: bold;
+  font-weight: bold; */
+  /* margin-top: 40px; */
+  width: 138px;
+  font-size: 12px;
+  height: 23px;
 }
+
+/* .nav-logo {
+  width: 138px;
+  height: 23px;
+} */
 
 .left-menu {
   grid-column: 2;
@@ -176,11 +185,11 @@ nav a {
 }
 
 .spring-img {
-  background-image: url('../images/spring-logo-white.svg');
+  background-image: url('../logos/spring-white.svg');
   background-repeat: no-repeat;
   background-position: center;
   width: 200px;
-  height: 85px;
+  height: 55px;
   /* margin-top: 20px; */
   margin: 0 auto;
 }
