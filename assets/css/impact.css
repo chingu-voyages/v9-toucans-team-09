@@ -129,3 +129,10 @@
 .impact-inactive {
   /* border: gray solid 3px; */
 }
+
+/* Swiper style */
+
+.swiper-container {
+  width: 600px;
+  height: 300px;
+}
