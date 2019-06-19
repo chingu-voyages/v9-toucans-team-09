@@ -71,3 +71,24 @@ button {
     /*example color*/
     background-color: rgb(92, 105, 101);
 }
+
+/*footer section*/
+
+footer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+footer .bottom-navigation {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+footer .bottom-navigation ul{
+    list-style: none;
+    text-align: left;
+}
+footer .bottom-navigation ul li:nth-child(1) {
+    font-weight: bold;
+}
+
+/*end footer*/
