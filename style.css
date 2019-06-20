@@ -16,7 +16,7 @@ section {
     padding-right: 10vw;
 
     /*example color*/
-    background-color: rgb(114, 129, 124);
+   /* background-color: rgb(114, 129, 124);*/
 }
 button {
     border-radius: 4px;
@@ -83,12 +83,27 @@ footer .bottom-navigation {
     justify-content: space-evenly;
     padding-top: 50px;
 }
-footer .bottom-navigation ul{
+footer ul {
     list-style: none;
+}
+footer .bottom-navigation ul{
     text-align: left;
 }
 footer .bottom-navigation ul li:nth-child(1) {
     font-weight: bold;
+}
+footer section .wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+footer .wrapper .row{
+    display: flex;
+}
+footer .wrapper select{
+    place-self: center;
+}
+footer .icons li {
+    padding: 10px;
 }
 
 /*end footer*/
