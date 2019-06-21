@@ -14,17 +14,8 @@ main {
 section {
     padding-left: 10vw;
     padding-right: 10vw;
+}
 
-    /*example color*/
-   /* background-color: rgb(114, 129, 124);*/
-}
-button {
-    border-radius: 4px;
-    color: rgb(255, 255, 255);
-    font-size: 15px;
-    padding: 0px 20px;
-    text-transform: uppercase;
-}
 button {
     border-radius: 4px;
     color: rgb(255, 255, 255);
@@ -49,6 +40,8 @@ button {
     /*example color*/
     background-color: rgb(92, 105, 101);
 }
+
+/*email section*/
 
 .mailing-list {
     background-color: rgb(255, 202, 11);
@@ -76,7 +69,6 @@ button {
     padding: 0;
     place-items: center;
     font-size: 1.5em;
-    /*remove once section color has been removed*/
     background-color: #fff;
 }
 .mailing-list img {
@@ -113,6 +105,9 @@ button {
     bottom: -13px;
     position: absolute;
 }
+/*end email*/
+
+/*call to action section*/
 .cta {
     padding: 0;
     margin-top: 50px;
@@ -206,6 +201,8 @@ button {
 .cta .sponsor button {
     background-color: rgb(54, 159, 244);
 }
+/*end call to action*/
+
 .promo {
     display: grid;
     grid-template-columns: 1fr 2fr;
