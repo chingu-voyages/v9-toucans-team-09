@@ -25,6 +25,13 @@ button {
     padding: 0px 20px;
     text-transform: uppercase;
 }
+button {
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 0px 20px;
+    text-transform: uppercase;
+}
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -43,12 +50,68 @@ button {
     background-color: rgb(92, 105, 101);
 }
 
+.mailing-list {
+    background-color: rgb(255, 202, 11);
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.mailing-list form {
+    margin: 25px 0px;
+    display: flex;
+    justify-content: center;
+}
+.mailing-list form input {
+    padding: 15px 20px;
+    line-height: 1.2em;
+    margin-left: -1px;
+    font-size: 1.2em;
+}
+.mailing-list form button {
+    background-color: rgb(144, 101, 190);
+}
 .mailing-list .media {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
-    /*example color*/
-    background-color: rgb(92, 105, 101);
+    padding: 0;
+    place-items: center;
+    font-size: 1.5em;
+    /*remove once section color has been removed*/
+    background-color: #fff;
+}
+.mailing-list img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.mailing-list .media button {
+    color: rgb(0, 0, 0);
+    border: 2px solid;
+}
+#short-scribble {
+    background-image: url("assets/images/scribble-short.png");
+    background-position: center;
+    background-size: contain;
+    padding: .2em;
+}
+#long-scribble {
+    background-image: url("assets/images/scribble-long.png");
+    background-position: center;
+    background-size: contain;
+    padding: .2em;
+}
+.mailing-list #cta {
+    max-width: 350px;
+    font-size: 1.2em;
+}
+.mailing-list div {
+    -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    background-color: rgb(255, 202, 11);
+    width: 15px;
+    height: 15px;
+    bottom: -13px;
+    position: absolute;
 }
 
 .cta .cards {
