@@ -1,12 +1,5 @@
-body {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  box-sizing: border-box;
-}
-
 /* Paskwa Tue Jun 11 */
-.hero h1,
+#hero-section h1,
 h2,
 h3,
 h4,
@@ -16,92 +9,24 @@ h6 {
   line-height: 1.1em;
 }
 
-.hero h1 {
+#hero-section h1 {
   font-size: 28px;
 }
 
-.hero p {
+#hero-section p {
   font-size: 19px;
+  background-color: none;
 }
 /* Paskwa Tue June 11 */
 
-main {
-  display: grid;
-  grid-template-rows: repeat(4, minmax(70vh, auto));
-  grid-template-columns: 100vw;
-  grid-row-gap: 0;
+#hero-section {
+  background-color: transparent;
 }
 
-button {
-  border-radius: 4px;
-  color: rgb(255, 255, 255);
-  font-size: 15px;
-  padding: 0px 20px;
-  text-transform: uppercase;
-}
-
-section {
-  padding-left: 10vw;
-  padding-right: 10vw;
-
-  /*example color*/
-  /* background-color: rgb(114, 129, 124); */
-}
-
-.hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* background-color: red; */
-  padding-top: 90px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.hero article {
-  /*example color*/
-  /* background-color: rgb(92, 105, 101); */
+#hero-article {
+  background-color: transparent;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-/* .impact .cards {
-  display: grid;
-  /* grid-template-columns: repeat(3, calc(100% / 3)); Paskwa Tue Jun 11*/
-/* grid-template-columns: repeat(3, auto); */
-/* grid-template-rows: minmax(40vh, 100%); */
-/*  grid-template-rows: minmax(40vh, auto); Paskwa - Tue Jun 11 */
-
-/*example color
-  background-color: rgb(92, 105, 101);
-} */
-
-.mailing-list .media {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  /*example color*/
-  background-color: rgb(92, 105, 101);
-}
-
-.cta .cards {
-  display: grid;
-  grid-template-columns: repeat(3, calc(100% / 3));
-  grid-template-rows: minmax(40vh, 100%);
-
-  /* examplecolor */
-  background-color: rgb(92, 105, 101);
-}
-
-.promo {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
-
-.promo article {
-  grid-column-start: 2;
-
-  /*example color*/
-  background-color: rgb(92, 105, 101);
 }
 
 /* Paskwa Tue Jun 11 */
@@ -160,7 +85,7 @@ nav a {
   justify-self: end;
 }
 
-.wrapper {
+#navhero-wrapper {
   background-image: url('../background images/hero.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -180,24 +105,7 @@ nav a {
   display: inline-block;
   align-content: center;
   border: solid 2px white;
-  border-radius: 10%;
-  padding: 5px;
-}
-
-.spring-img {
-  background-image: url('../logos/spring-white.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 200px;
-  height: 55px;
-  /* margin-top: 20px; */
-  margin: 0 auto;
-}
-
-.spring-btn {
-  background-color: #00ac77;
   margin: 10px 0 0;
-  padding: 0 20px;
   height: 48px;
   line-height: 48px;
   /* text-transform: uppercase; */
@@ -208,6 +116,21 @@ nav a {
   font-weight: 500;
   display: inline-block;
   color: #fff;
+}
+
+#spring-img {
+  background-image: url('../logos/spring-white.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 55px;
+  padding-top: 0;
+  /* margin-top: 20px; */
+  margin: 0 auto;
+}
+
+#spring-btn {
+  background-color: #00ac77;
 }
 
 /* #water-impact {
@@ -225,7 +148,7 @@ nav a {
     background-image: url ();
   } */
 
-  .wrapper {
+  #navhero-wrapper {
     background-color: azure;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -282,3 +205,47 @@ nav a {
     margin: 0 auto;
   }
 }
+
+/* ~~~~~~~~~~~~~Paskwa Fri June 21~~~~~~~~~~ */
+
+#promo-section {
+  /* border: #00ac77 solid 10px; */
+  /* padding-left: 10vw;
+  padding-right: 10vw; */
+  padding: 0;
+  max-width: 920px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: 1vw 4fr 2vw;
+}
+
+#promo-article {
+  /* border: solid 5px red; */
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  /* grid-column-start: 1; */
+  background-color: #fff;
+  padding: 0;
+  text-align: left;
+}
+
+#promo-img {
+  width: 270px;
+  height: 260px;
+}
+
+#promo-btn {
+  background-color: #ffca0a;
+}
+
+#promo-h3 {
+  font-size: 19px;
+}
+
+#promo-p {
+  font-size: 16px;
+}
+
+/* +++++++++++++end of Paskwa Fri June 21 */
