@@ -53,6 +53,7 @@ button {
     margin: 25px 0px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .mailing-list form input {
     padding: 15px 20px;
