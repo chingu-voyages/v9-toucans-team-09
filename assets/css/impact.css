@@ -1,25 +1,25 @@
 #water-impact {
-  background-color: #fafafa;
+  display: grid;
+  /* grid-template-rows: minmax(40vh 70vh); */
+  /* max-height: 1010px; */
 }
 
 #water-cards {
   display: grid;
   /* grid-template-columns: repeat(3, calc(100% / 3)); */
-  grid-template-rows: minmax(100vh, 100%);
+  grid-template-rows: minmax(40vh, 100vh);
   background-color: #fafafa;
   background-image: url('../background images/impact-large.jpg');
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   /* margin-top: 1%; */
+  /* padding-bottom: 30%; */
+  height: 100%;
   padding-bottom: 30%;
 }
 
-.impact-card {
-  display: grid;
-  grid-template-columns: repeat(3, calc(100% / 3));
-}
-
+/* 100% impact section */
 .impact-hundred {
   margin-top: 20px;
 }
@@ -28,6 +28,12 @@
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+#hundred {
+  position: relative;
+  bottom: 35rem;
+}
+/* 100% impact section */
 
 .h2-impact {
   display: block;
@@ -42,11 +48,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#hundred {
-  position: relative;
-  bottom: 35rem;
-}
-
 .impactcard-img {
   width: 200px;
   height: 200px;
@@ -59,25 +60,6 @@
   border-radius: 4px;
 } */
 
-.impact-list {
-  list-style: none;
-  margin: 2em;
-  display: grid;
-  grid-gap: -1px;
-  /* grid-template-columns: repeat(auto-fill, minmax(300px, 350px)); */
-  grid-template-columns: repeat(3, calc(80% / 3));
-  grid-template-rows: minmax(30vh, 90%);
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0 10% 0 10%;
-  padding-top: 40px;
-}
-
-.impact-list li {
-  border: 2px solid lightgray;
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-}
 .impact-list .cta {
   margin-top: auto;
 
@@ -85,11 +67,11 @@
   text-align: center;
 }
 
-.impact-list a {
+.slide a {
   text-decoration: none;
   color: blue;
 }
-.impact-list .impact-body {
+.slide .impact-body {
   padding: 10px;
   font-size: 16px;
 }
@@ -100,33 +82,83 @@
   font-weight: bold;
 }
 
-.card-slider {
-  /* margin: auto; */
-  /* border: 10px solid red; */
-  max-width: 1440px;
-  justify-content: center;
-  width: 100%;
+/* Paskwa Tue June 25 */
+
+.slider-viewer {
+  position: relative;
+
+  overflow: scroll;
+  height: 400px;
+}
+
+.slide-group {
+  width: 80%;
+  margin: 0 auto;
+  height: 70%;
+  position: relative;
+  /* border: solid 2px yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15%;
+}
+
+.slide {
+  width: 300px;
+  height: auto;
   position: absolute;
-  top: 95%;
-  left: 10%;
-}
-
-.impact-active {
-  border: gray solid 3px;
-  transform: scale(1.1); /* 110% zoom*/
-  z-index: 20;
-  opacity: 1;
-}
-
-.impact-inactive {
-  /* border: gray solid 3px; */
+  border: 2px solid #f1f1f1;
+  background: #fff;
+  padding: 20px 10px;
+  border-radius: 4px;
+  transition: border-color 0.15s linear;
+  align-items: center;
   opacity: 0.35;
-  background-color: #fafafa;
+  text-align: center;
+  font-size: 16px;
+  z-index: 2;
+  top: 100%;
 }
 
-/* Swiper style */
-
-.swiper-container {
-  width: 600px;
-  height: 300px;
+#slide-1 {
+  left: 25%;
 }
+
+#slide-2 {
+  left: 45%;
+}
+
+#slide-3 {
+  left: 65%;
+}
+
+/* .slide:nth-child(2) {
+  opacity: 1;
+  border: 2px solid lightgray;
+  transition: border-color 0.15s linear;
+  z-index: 2;
+  transform: scale(1.1);
+} */
+
+.impactcard-img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.impactcard-heading {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.active-card {
+  opacity: 1;
+  border: 2px solid lightgray;
+  transition: border-color 0.15s linear;
+  z-index: 5;
+  transform: scale(1.1);
+}
+
+/* End of Paskwa Tue June 25 */
