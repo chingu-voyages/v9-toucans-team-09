@@ -74,7 +74,7 @@ nav a {
   grid-column: 2;
 }
 
-.right-menu {
+#right-menu {
   grid-column: 4;
 }
 
@@ -104,18 +104,21 @@ nav a {
 .btn {
   display: inline-block;
   align-content: center;
-  border: solid 2px white;
-  margin: 10px 0 0;
+  margin: 0;
   height: 48px;
   line-height: 48px;
-  /* text-transform: uppercase; */
   letter-spacing: 0.1em;
-  /* border-radius: 4px; */
-  border: 0;
   font-size: 15px;
   font-weight: 500;
   display: inline-block;
-  color: #fff;
+}
+
+#right-menu button {
+  border: solid 1px white;
+  /* border-radius: 4px; */
+  background-color: transparent;
+  letter-spacing: 1px;
+  font-size: 12px;
 }
 
 #spring-img {

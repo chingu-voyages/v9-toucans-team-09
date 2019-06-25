@@ -11,17 +11,17 @@
     <link type="text/css" rel="stylesheet" href="assets/css/impact.css" />
     <link type="text/css" rel="stylesheet" href="assets/css/swiper.css" />
 
- 
+
 
     <!-- Paskwa Tue Jun 11 Font Awesome code -->
     <script src="https://kit.fontawesome.com/fe57eaf478.js"></script>
 
     <!-- Paskwa Tue Jun 18 swiper for carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 
 </head>
 
@@ -42,10 +42,10 @@
                         <a href="#">Thirst Book</a>
                     </div>
 
-                    <div class="right-menu menu">
+                    <div id="right-menu" class="menu">
 
-                        <a class="btn" href="#" role="button">Donate</a>
-                        <a class="btn" href="#" role="button">Fundraise</a>
+                        <button class="btn .menu-btn" href="#" role="button .menu-btn">Donate</button>
+                        <button class="btn" href="#" role="button">Fundraise</button>
                         <a href="#">Sign In</a>
 
                     </div>
@@ -71,80 +71,71 @@
         <!---->
         <!-- Paskwa - Tue Jun 11 -->
         <!-- <div class="water-impact"> -->
-        <div class="water-impact">
-            <div class="water-cards">
-                <div class="watercards-heading">
-                    <h2 class="h2-impact">1 in 10 people lack access to clean water. We’re on a mission to change that.
-                        Here’s
-                        how.</h2>
-                  <div class="card-slider">
-                        <ul class="impact-list">
-                            <li id="sustainable" class="impact-inactive">
-                                <img class="impactcard-img" alt="yellow sustainable projects icon"
-                                    src="assets/images/impact-sustainable.svg">
-                                <div class="impact-body">
-                                    <h4 class="impactcard-heading">sustainable Projects</h4>
-                                    <p class="impactcard-body">We invest in forming strong water committees, partnering
-                                        with
-                                        local government, and training mechanics to perform repairs.</p>
-                                </div>
-                                <div class="cta"><a href="">Learn more</a></div>
-                            </li>
-                            <li id="local" class="impact-active" >
-                                <img class="impactcard-img" alt="yellow sustainable projects icon"
-                                    src="assets/images/impact-sustainable.svg">
-                                <div class="impact-body">
-                                    <h4 class="impactcard-heading">sustainable Projects</h4>
-                                    <p class="impactcard-body">We invest in forming strong water committees, partnering
-                                        with
-                                        local government, and training mechanics to perform repairs.</p>
-                                </div>
-                                <div class="cta"><a href="">Learn more</a></div>
-                            </li>
-                            <li id="prove" class="impact-inactive">
-                                <img class="impactcard-img" alt="yellow sustainable projects icon"
-                                    src="assets/images/impact-sustainable.svg">
-                                <div class="impact-body">
-                                    <h4 class="impactcard-heading">sustainable Projects</h4>
-                                    <p class="impactcard-body">We invest in forming strong water committees, partnering
-                                        with
-                                        local government, and training mechanics to perform repairs.</p>
-                                </div>
-                                <div class="cta"><a href="">Learn more</a></div>
-                            </li>
 
-                        </ul>
-                    </div>
-                    <!--end of card-slider-->
-                </div>
-                <!--end of watercards-heading-->
+        <div id="water-impact">
+         
+                        <h2 class="h2-impact">1 in 10 people lack access to clean water. We’re on a mission to change that.
+                            Here’s how.</h2>
+         
 
+            <div id="water-cards">
+
+              <div class="card-slider">
+                    <ul class="impact-list">
+                        <li id="sustainable" class="impact-inactive impact-card">
+                            <img class="impactcard-img" alt="yellow sustainable projects icon"
+                                src="assets/images/impact-sustainable.svg">
+                            <div class="impact-body">
+                                <h4 class="impactcard-heading">sustainable Projects</h4>
+                                <p class="impactcard-body">We invest in forming strong water committees, partnering
+                                    with
+                                    local government, and training mechanics to perform repairs.</p>
+                            </div>
+                            <div class="cta"><a href="">Learn more</a></div>
+                        </li>
+                        <li id="local" class="impact-active impact-card">
+                            <img class="impactcard-img" alt="yellow sustainable projects icon"
+                                src="assets/images/impact-sustainable.svg">
+                            <div class="impact-body">
+                                <h4 class="impactcard-heading">sustainable Projects</h4>
+                                <p class="impactcard-body">We invest in forming strong water committees, partnering
+                                    with
+                                    local government, and training mechanics to perform repairs.</p>
+                            </div>
+                            <div class="cta"><a href="">Learn more</a></div>
+                        </li>
+                        <li id="prove" class="impact-inactive impact-card">
+                            <img class="impactcard-img" alt="yellow sustainable projects icon"
+                                src="assets/images/impact-sustainable.svg">
+                            <div class="impact-body">
+                                <h4 class="impactcard-heading">sustainable Projects</h4>
+                                <p class="impactcard-body">We invest in forming strong water committees, partnering
+                                    with
+                                    local government, and training mechanics to perform repairs.</p>
+                            </div>
+                            <div class="cta"><a href="">Learn more</a></div>
+                        </li>
+
+                    </ul>
+                </div> 
+                <!--end of card-slider-->
             </div>
             <!--end of water-cards-->
             <!-- Swiper -->
-  <!-- Swiper -->
-  <!-- Slider main container -->
-<div class="swiper-container">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
+            <!-- Swiper -->
+            <!-- Slider main container -->
+            <!-- <div class="swiper-container"> -->
+            <!-- Additional required wrapper -->
+            <!-- <div class="swiper-wrapper"> -->
             <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
+            <!-- <div class="swiper-slide">Slide 1</div>
             <div class="swiper-slide">Slide 2</div>
             <div class="swiper-slide">Slide 3</div>
             ...
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-    
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-    </div>
+        </div> -->
+    </div> 
             <!-- end of swiper -->
-            <div class="hundred">
+            <div id="hundred">
                 <img class="impact-hundred" src="./assets/images/100.svg">
                 <p class="impact-private">Private donors cover our operating costs so 100% of your donation will bring
                     clean
@@ -194,12 +185,15 @@
         <!-- Paskwa Fri June 21 -->
         <section id="promo-section" class="promo">
             <article id="promo-article">
-                <img id="promo-img" alt="promotional item" src="./assets/images/book.jpg" >
+                <img id="promo-img" alt="promotional item" src="./assets/images/book.jpg">
                 <div class="promo-text">
-                <h3 id="promo-h3">Thirst: A Story of Redemption, Compassion, and a Mission to Bring Clean Water to the World</h3>
-                <p id="promo-p">Buy the New York Times bestseller, an inspiring personal story of redemption, second chances, and the transformative power within us all from charity: water founder Scott Harrison. 100% of the author's net proceeds from the sale of Thirst will fund clean water.</p>
-                <button class= "btn" id="promo-btn">Buy the book</button>
-            </div>
+                    <h3 id="promo-h3">Thirst: A Story of Redemption, Compassion, and a Mission to Bring Clean Water to
+                        the World</h3>
+                    <p id="promo-p">Buy the New York Times bestseller, an inspiring personal story of redemption, second
+                        chances, and the transformative power within us all from charity: water founder Scott Harrison.
+                        100% of the author's net proceeds from the sale of Thirst will fund clean water.</p>
+                    <button class="btn" id="promo-btn">Buy the book</button>
+                </div>
             </article>
         </section>
         <!-- Paskwa June 21 -->
