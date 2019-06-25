@@ -38,6 +38,8 @@ You can review the site [coming soon](https://docs.google.com/presentation/d/11z
 
 * WS3Schools. [CSS Grid layout module](https://www.w3schools.com/css/css_grid.asp)
 
+* Carousel with swiper [https://idangero.us/swiper/](https://idangero.us/swiper/)
+
 ## Screenshot
 
 ![homepage coming soon]()
