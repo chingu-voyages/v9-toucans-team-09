@@ -1,72 +1,208 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-        <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <header class="navigation">Header Placeholder</header>
-        <main>
-            <section class="hero">
+
+<head>
+    <title>Toucans-team-09</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="./style.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/navhero.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/impact.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/swiper.css" />
+
+
+
+    <!-- Paskwa Tue Jun 11 Font Awesome code -->
+    <script src="https://kit.fontawesome.com/fe57eaf478.js"></script>
+
+    <!-- Paskwa Tue Jun 18 swiper for carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+</head>
+
+<body>
+    <!-- <header class="navigation">Header Placeholder</header> -->
+    <main>
+        <!-- Paskwa - Tue Jul 11 -->
+        <div id="navhero-wrapper">
+            <div class="nav-container">
+                <nav>
+
+
+                    <div class="left-menu menu">
+                        <a href="#" id="logo"><img alt="charity water logo" src="./assets/logos/logo-white.png"></a>
+                        <a href="#">Why Water?</a>
+                        <a href="#">Our Work</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Thirst Book</a>
+                    </div>
+
+                    <div id="right-menu" class="menu">
+
+                        <button class="btn .menu-btn" href="#" role="button .menu-btn">Donate</button>
+                        <button class="btn" href="#" role="button">Fundraise</button>
+                        <a href="#">Sign In</a>
+
+                    </div>
+                    <div class="hamburger">
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </nav>
+                </nav>
+            </div>
+            <section id="hero-section" class="hero">
+                <article id="hero-article">
+                    <div id="spring-img"></div>
+                    <!-- <img class="spring-img" src="./assets/images/spring-logo-white.svg" alt="" /> -->
+                    <h1>Join an unstoppable community of monthly givers.</h1>
+                    <p>There will be a day–in our lifetime–when we get to celebrate every person on the planet having
+                        access to clean water. We want to celebrate that day with you.</p>
+                    <button class="btn" id="spring-btn">Join the spring</button>
+                </article>
+            </section>
+        </div>
+        <!---->
+        <!-- Paskwa - Tue Jun 11 -->
+        <!-- <div class="water-impact"> -->
+
+        <div id="water-impact">
+         
+                        <h2 class="h2-impact">1 in 10 people lack access to clean water. We’re on a mission to change that.
+                            Here’s how.</h2>
+         
+
+            <div id="water-cards">
+
+              <div class="card-slider">
+                    <ul class="impact-list">
+                        <li id="sustainable" class="impact-inactive impact-card">
+                            <img class="impactcard-img" alt="yellow sustainable projects icon"
+                                src="assets/images/impact-sustainable.svg">
+                            <div class="impact-body">
+                                <h4 class="impactcard-heading">sustainable Projects</h4>
+                                <p class="impactcard-body">We invest in forming strong water committees, partnering
+                                    with
+                                    local government, and training mechanics to perform repairs.</p>
+                            </div>
+                            <div class="cta"><a href="">Learn more</a></div>
+                        </li>
+                        <li id="local" class="impact-active impact-card">
+                            <img class="impactcard-img" alt="yellow sustainable projects icon"
+                                src="assets/images/impact-sustainable.svg">
+                            <div class="impact-body">
+                                <h4 class="impactcard-heading">sustainable Projects</h4>
+                                <p class="impactcard-body">We invest in forming strong water committees, partnering
+                                    with
+                                    local government, and training mechanics to perform repairs.</p>
+                            </div>
+                            <div class="cta"><a href="">Learn more</a></div>
+                        </li>
+                        <li id="prove" class="impact-inactive impact-card">
+                            <img class="impactcard-img" alt="yellow sustainable projects icon"
+                                src="assets/images/impact-sustainable.svg">
+                            <div class="impact-body">
+                                <h4 class="impactcard-heading">sustainable Projects</h4>
+                                <p class="impactcard-body">We invest in forming strong water committees, partnering
+                                    with
+                                    local government, and training mechanics to perform repairs.</p>
+                            </div>
+                            <div class="cta"><a href="">Learn more</a></div>
+                        </li>
+
+                    </ul>
+                </div> 
+                <!--end of card-slider-->
+            </div>
+            <!--end of water-cards-->
+            <!-- Swiper -->
+            <!-- Swiper -->
+            <!-- Slider main container -->
+            <!-- <div class="swiper-container"> -->
+            <!-- Additional required wrapper -->
+            <!-- <div class="swiper-wrapper"> -->
+            <!-- Slides -->
+            <!-- <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+        </div> -->
+    </div> 
+            <!-- end of swiper -->
+            <div id="hundred">
+                <img class="impact-hundred" src="./assets/images/100.svg">
+                <p class="impact-private">Private donors cover our operating costs so 100% of your donation will bring
+                    clean
+                    water to people in need. <a href="#">Learn more.</a></p>
+            </div>
+            <!--end of hundred-->
+        </div>
+        <!--end of water-impact-->
+
+        <!-- Paskwa - Tue Jun 11 -->
+        <section class="mailing-list">
+            <form action="">Placeholder</form>
+            <section class="media">
+                <video src="" alt=""></video>
+                <article>Placeholder</article>
+            </section>
+        </section>
+        <section class="cta">
+            <section class="cards">
                 <article>
-                    <img src="" alt="">
-                    <h3>Placeholder</h3>
-                    <p>Placeholder</p>
+                    <p>Card #1</p>
+                    <button></button>
+                </article>
+                <article>
+                    <p>Card #2</p>
+                    <button></button>
+                </article>
+                <article>
+                    <p>Card #3</p>
+                    <button></button>
+                </article>
+                <article>
+                    <p>Card #4</p>
+                    <button></button>
+                </article>
+                <article>
+                    <p>Card #5</p>
+                    <button></button>
+                </article>
+                <article>
+                    <p>Card #6</p>
                     <button></button>
                 </article>
             </section>
-            <section class="impact">
-                <h2>Placeholder</h2>
-                <section class="cards">
-                    <article>Card #1</article>
-                    <article>Card #2</article>
-                    <article>Card #3</article>
-                </section>
-            </section>
-            <section class="mailing-list">
-                <form action="">Placeholder</form>
-                <section class="media">
-                    <video src="" alt=""></video>
-                    <article>Placeholder</article>
-                </section>
-            </section>
-            <section class="cta">
-                <section class="cards">
-                    <article>
-                        <p>Card #1</p>
-                        <button></button>
-                    </article>
-                    <article>
-                        <p>Card #2</p>
-                        <button></button>
-                    </article>
-                    <article>
-                        <p>Card #3</p>
-                        <button></button>
-                    </article>
-                    <article>
-                        <p>Card #4</p>
-                        <button></button>
-                    </article>
-                    <article>
-                        <p>Card #5</p>
-                        <button></button>
-                    </article>
-                    <article>
-                        <p>Card #6</p>
-                        <button></button>
-                    </article>
-                </section>
-            </section>
-            <section class="promo">
-                <article>
-                    <h3>Placeholder</h3>
-                    <p>Placeholder</p>
-                    <button></button>
-                </article>
-            </section>
-        </main>
-        <footer>Footer Placeholder</footer>
-    </body>
+        </section>
+
+        <!-- Paskwa Fri June 21 -->
+        <section id="promo-section" class="promo">
+            <article id="promo-article">
+                <img id="promo-img" alt="promotional item" src="./assets/images/book.jpg">
+                <div class="promo-text">
+                    <h3 id="promo-h3">Thirst: A Story of Redemption, Compassion, and a Mission to Bring Clean Water to
+                        the World</h3>
+                    <p id="promo-p">Buy the New York Times bestseller, an inspiring personal story of redemption, second
+                        chances, and the transformative power within us all from charity: water founder Scott Harrison.
+                        100% of the author's net proceeds from the sale of Thirst will fund clean water.</p>
+                    <button class="btn" id="promo-btn">Buy the book</button>
+                </div>
+            </article>
+        </section>
+        <!-- Paskwa June 21 -->
+    </main>
+    <footer>Footer Placeholder</footer>
+
+    <!-- Paskwa Jun 18 2019 - Swiper JS file -->
+
+    <script type="" src="./assets/scripts/swiper.js"></script>
+</body>
+
 </html>
