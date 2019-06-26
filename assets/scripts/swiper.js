@@ -5,15 +5,20 @@ $(document).ready(function() {
 
 // variables
 
-var $firstCard = $('.slide:first-child');
-var $secondCard = $('.slide:nth-child(2)');
-var $thirdCard = $('.slide:last-child');
+var $firstCard = $('#slide-1');
+var $secondCard = $('#slide-2');
+var $thirdCard = $('#slide-3');
 var slideLeft, slideMiddle, slideRight;
 
 //event Listeners
 $($firstCard).on('click', moveLeft);
-$($secodCard).on('click', initCards);
+$($secondCard).on('click', initCards);
 $($thirdCard).on('click', moveRight);
+
+//Keypress
+$($firstCard).on('keyup', checkKey);
+$($secondCard).on('keyup', checkKey);
+$($thirdCard).on('keyup', checkKey);
 
 // functions
 
@@ -22,6 +27,7 @@ function initCards() {
   $($firstCard).removeClass('active-card');
   $($secondCard).addClass('active-card');
   $($thirdCard).removeClass('active-card');
+  $('.slide').removeClass('shrink-card');
 
   // position cards
 
@@ -36,15 +42,17 @@ function initCards() {
 
 function moveLeft() {
   // remove active-card class from first and last cards. Make 2nd card active
+  $('.slide').removeClass('shrink-card');
   $($firstCard).addClass('active-card');
   $($secondCard).removeClass('active-card');
   $($thirdCard).removeClass('active-card');
+  $($thirdCard).addClass('shrink-card');
 
   // position cards
 
-  slideLeft = '45%';
-  slideMiddle = '65%';
-  slideRight = '85%';
+  slideLeft = '35%';
+  slideMiddle = '55%';
+  slideRight = '75%';
 
   $($firstCard).css({ left: slideLeft });
   $($secondCard).css({ left: slideMiddle });
@@ -53,17 +61,38 @@ function moveLeft() {
 
 function moveRight() {
   // remove active-card class from first and last cards. Make 2nd card active
+  $('.slide').removeClass('shrink-card');
   $($firstCard).removeClass('active-card');
   $($secondCard).removeClass('active-card');
   $($thirdCard).addClass('active-card');
+  $($firstCard).addClass('shrink-card');
 
   // position cards
 
-  slideLeft = '15%';
+  slideLeft = '5%';
   slideMiddle = '25%';
   slideRight = '45%';
 
   $($firstCard).css({ left: slideLeft });
   $($secondCard).css({ left: slideMiddle });
   $($thirdCard).css({ left: slideRight });
+}
+
+// Key press
+
+function checkKey(event) {
+  switch (event.keyCode) {
+    case 37:
+      alert('Left key pressed');
+      break;
+    case 38:
+      alert('Up key pressed');
+      break;
+    case 39:
+      alert('Right key pressed');
+      break;
+    case 40:
+      alert('Down key pressed');
+      break;
+  }
 }
