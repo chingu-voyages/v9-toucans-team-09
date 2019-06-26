@@ -69,14 +69,28 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0;
-    place-items: center;
+    place-content: center;
     font-size: 1.5em;
     background-color: #fff;
 }
-.mailing-list img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+.mailing-list .media .video {
+    background-image: url("assets/images/video.jpg");
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    width: auto;
+    display: grid;
+    place-items: center;
+}
+.mailing-list .media a, a:visited {
+    text-decoration: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+}
+.mailing-list .media .video i {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
 }
 .mailing-list .media button {
     color: rgb(0, 0, 0);
