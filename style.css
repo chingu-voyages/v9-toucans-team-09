@@ -131,8 +131,9 @@ button {
 }
 .cta .cards {
     display: grid; 
-    grid-template-columns: repeat(3, calc(100% / 3));
-    grid-template-rows: minmax(40vh, 100%);
+    /*grid-template-columns: repeat(3, calc(100% / 3));
+    grid-template-rows: minmax(40vh, 100%);*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 10px;
     background-color: rgb(255, 255, 255);
 
