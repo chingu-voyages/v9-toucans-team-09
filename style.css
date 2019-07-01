@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 main {
@@ -17,6 +20,7 @@ section {
 }
 
 button {
+  border: none;
   border-radius: 4px;
   color: rgb(255, 255, 255);
   font-size: 15px;
@@ -69,18 +73,52 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0;
-    place-items: center;
+    place-content: center;
     font-size: 1.5em;
     background-color: #fff;
 }
-.mailing-list img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+
+/*MEDIA QUERY*/
+@media (max-width: 938px){
+    .mailing-list .media {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+/*END*/
+
+.mailing-list .media .video {
+    background-image: url("assets/images/video.jpg");
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    width: auto;
+    display: grid;
+    place-items: center;
+}
+.mailing-list .media a, a:visited {
+    text-decoration: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+}
+.mailing-list .media .video i {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+.mailing-list .media .media-info {
+    padding: 15px 55px;
+    font-size: 32px;
+    font-weight: 500;
+}
+.mailing-list .media .media-info h6 {
+    margin-bottom: -15px;
 }
 .mailing-list .media button {
     color: rgb(0, 0, 0);
     border: 2px solid;
+    margin-bottom: 20px;
 }
 #short-scribble {
     background-image: url("assets/images/scribble-short.png");
@@ -96,7 +134,8 @@ button {
 }
 .mailing-list #cta {
     max-width: 350px;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    line-height: 1.5em;
 }
 .mailing-list div {
     -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
@@ -116,8 +155,9 @@ button {
 }
 .cta .cards {
     display: grid; 
-    grid-template-columns: repeat(3, calc(100% / 3));
-    grid-template-rows: minmax(40vh, 100%);
+    /*grid-template-columns: repeat(3, calc(100% / 3));
+    grid-template-rows: minmax(40vh, 100%);*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 10px;
     background-color: rgb(255, 255, 255);
 
@@ -141,8 +181,6 @@ button {
     padding: 20px;
 }
 .cta .cards button {
-    line-height: 1.5em;
-    font-size: 1.2em;
     margin-bottom: 20px;
 }
 .cta .cards #info {
