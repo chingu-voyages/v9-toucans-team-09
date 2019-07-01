@@ -74,6 +74,17 @@ button {
     font-size: 1.5em;
     background-color: #fff;
 }
+
+/*MEDIA QUERY*/
+@media (max-width: 938px){
+    .mailing-list .media {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+/*END*/
+
 .mailing-list .media .video {
     background-image: url("assets/images/video.jpg");
     background-size: cover;
@@ -93,9 +104,18 @@ button {
     font-size: 24px;
     color: rgb(255, 255, 255);
 }
+.mailing-list .media .media-info {
+    padding: 15px 55px;
+    font-size: 32px;
+    font-weight: 500;
+}
+.mailing-list .media .media-info h6 {
+    margin-bottom: -15px;
+}
 .mailing-list .media button {
     color: rgb(0, 0, 0);
     border: 2px solid;
+    margin-bottom: 20px;
 }
 #short-scribble {
     background-image: url("assets/images/scribble-short.png");
@@ -111,7 +131,8 @@ button {
 }
 .mailing-list #cta {
     max-width: 350px;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    line-height: 1.5em;
 }
 .mailing-list div {
     -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
