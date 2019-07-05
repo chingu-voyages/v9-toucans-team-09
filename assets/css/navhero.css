@@ -5,7 +5,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 500;
+  font-weight: 300;
   line-height: 1.1em;
 }
 
@@ -34,12 +34,7 @@ h6 {
 /* Updated Thu Jul 4*/
 
 .nav-container {
-  width: 100%;
-  /* background: black; */
   max-height: 150px;
-  display: flex; /* lay out the elements in the navigation container with Flexbox */
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 nav {
@@ -50,49 +45,40 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 nav a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  font-size: 12px;
+  /* font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold; */
 }
 
 #logo img {
-  /* text-transform: lowercase;
-  font-family: 'Times New Roman', Times, serif;
-  font-stretch: expanded;
-  font-weight: bold; */
-  /* margin-top: 40px; */
   width: 138px;
-  font-size: 12px;
-  height: 23px;
 }
 
-/* .nav-logo {
-  width: 138px;
-  height: 23px;
-} */
+.menu {
+  display: flex;
+  align-items: center;
+}
 
 .left-menu {
-  display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 #right-menu {
-  display: flex;
   justify-content: right;
-  align-items: center;
 }
 
-.hamburger {
-  grid-column: 5;
+#hamburger {
   color: white;
   font-size: 3rem;
   justify-self: end;
+  display: none;
 }
 
 #navhero-wrapper {
@@ -101,13 +87,13 @@ nav a {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+  width: 100%;
 }
 
 .menu a {
   /* padding: 20px 0; */
   margin-left: 15px;
   font-size: 14px;
-  font-weight: bold;
   letter-spacing: 0.5px;
 }
 
@@ -120,15 +106,21 @@ nav a {
   letter-spacing: 0.1em;
   font-size: 15px;
   font-weight: 500;
-  display: inline-block;
 }
 
 #right-menu button {
   border: solid 1px white;
-  /* border-radius: 4px; */
+  border-radius: 4px;
   background-color: transparent;
   letter-spacing: 1px;
   font-size: 12px;
+  margin-left: 5px;
+  padding: 5px 7px;
+  /* display: inline-block; */
+  align-content: center;
+  /* margin: 0; */
+  height: 38px;
+  letter-spacing: 0.1em;
 }
 
 #spring-img {
@@ -138,8 +130,8 @@ nav a {
   width: 200px;
   height: 55px;
   padding-top: 0;
-  /* margin-top: 20px; */
-  margin: 0 auto;
+  margin: 20px auto 20px auto;
+  /* margin: 0 auto; */
 }
 
 #spring-btn {
@@ -156,66 +148,66 @@ nav a {
 
 /* MEDIA QUERIES  /* Paskwa Tue Jun 11 */
 @media screen and (max-width: 1024px) {
-  /* .wrapper {
-    background-color: aliceblue;
-    background-image: url ();
-  } */
-
   #navhero-wrapper {
-    background-color: azure;
+    background-color: aliceblue;
+    background-image: url('../background images/hero-mobile.jpg');
     background-position: bottom;
     background-repeat: no-repeat;
-    background-image: url();
-    background-size: cover;
-    content: '';
-    height: 100%;
-    width: 100%;
-    display: grid;
-    /* grid-template-rows: 3 1fr; */
-  }
-
-  .hero {
-    display: grid;
-    /* grid-template-columns: 1fr; */
-    background-color: azure;
-    background-position: top;
-    background-repeat: no-repeat;
-    /* background-image: url('./background images/hero-mobile.jpg'); */
-    background-image: url('../background images/hero-mobile.jpg');
     background-size: contain;
-    content: '';
     height: 100%;
-    width: 100%;
   }
 
-  .hero article {
+  #hamburger {
+    display: block;
+  }
+
+  #hero-article {
     /*example color*/
     /* background-color: rgb(92, 105, 101); */
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
   }
 
+  .nav {
+    display: flex;
+  }
   .left-menu {
-    grid-row: 2;
-    grid-column: 2 / 5;
-    background-color: #000;
+    display: none;
   }
 
-  .left-menu a {
-    grid-template-columns: 1fr;
-    height: calc(80vh - 70px);
-    align-content: space-evenly;
-    color: #fff;
+  #right-menu {
+    display: flex;
+    justify-content: end;
   }
 
-  .spring-img {
-    background-image: url('../images/_spring-logo.svg');
+  #fundraise {
+    display: none;
+  }
+
+  #sign-in {
+    display: none;
+  }
+  #spring-img {
+    background-image: url('../logos/spring-black.svg');
     background-repeat: no-repeat;
     background-position: bottom;
     width: 200px;
     height: 85px;
     /* margin-top: 20px; */
-    margin: 0 auto;
+    margin: 20px auto 20px auto;
+  }
+
+  #spring-btn {
+    margin-bottom: 2%;
+  }
+
+  .hero {
+    display: flex;
+  }
+
+  #hero-section {
+    font-size: 70%;
   }
 }
 

@@ -7,7 +7,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" 
+    href="style.css">
     <link type="text/css" rel="stylesheet" href="./style.css" />
     <link type="text/css" rel="stylesheet" href="assets/css/navhero.css" />
     <link type="text/css" rel="stylesheet" href="assets/css/impact.css" />
@@ -34,9 +35,8 @@
         <div id="navhero-wrapper">
             <div class="nav-container">
                 <nav>
-
-
                     <div class="left-menu menu">
+                        <span></span>
                         <a href="#" id="logo"><img alt="charity water logo" src="./assets/logos/logo-white.png"></a>
                         <a href="#">Why Water?</a>
                         <a href="#">Our Work</a>
@@ -46,16 +46,18 @@
 
                     <div id="right-menu" class="menu">
 
-                        <button class="btn .menu-btn" href="#" role="button .menu-btn">Donate</button>
-                        <button class="btn" href="#" role="button">Fundraise</button>
-                        <a href="#">Sign In</a>
-
+                        <button id="donate" href="#" role="button .menu-btn">Donate</button>
+                        <button id="fundraise" href="#" role="button">Fundraise</button>
+                        <a id="sign-in" href="#">Sign In</a>
+                        <a id="hamburger" href="#" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars"></i>
+                            </a>
                     </div>
-                    <div class="hamburger">
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <!-- <div class="hamburger">
+                        <a href="#" class="icon" onclick="myFunction()">
                             <i class="fa fa-bars"></i>
                         </a>
-                    </div>
+                    </div> -->
                 </nav>
                 </nav>
             </div>
