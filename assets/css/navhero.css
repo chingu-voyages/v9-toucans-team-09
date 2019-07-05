@@ -155,22 +155,31 @@ nav a {
     background-repeat: no-repeat;
     background-size: contain;
     height: 100%;
+    width: 100%;
   }
 
   #hamburger {
     display: block;
   }
 
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
   #hero-article {
     /*example color*/
     /* background-color: rgb(92, 105, 101); */
     color: black;
     text-align: center;
     width: 100%;
+    padding: 0%;
   }
 
   .nav {
     display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0;
   }
   .left-menu {
     display: none;
@@ -178,7 +187,10 @@ nav a {
 
   #right-menu {
     display: flex;
-    justify-content: end;
+  }
+
+  #donate {
+    align-self: flex-end;
   }
 
   #fundraise {
@@ -254,3 +266,43 @@ nav a {
 }
 
 /* +++++++++++++end of Paskwa Fri June 21 */
+
+/* Paskwa added @Elisheba's code */
+/* DROPDOWN MENU*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 250px;
+  z-index: 1;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-triangle {
+  -webkit-clip-path: polygon(0% 87%, 50% 0%, 50% 0%, 100% 87%);
+  clip-path: polygon(0% 87%, 50% 0%, 50% 0%, 100% 87%);
+  background-color: black;
+  width: 15px;
+  height: 12px;
+  top: -10px;
+  left: 30px;
+  position: absolute;
+}
+.dropdown-content a:hover {
+  background-color: rgb(0, 0, 0);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* End of drop-down menu */
