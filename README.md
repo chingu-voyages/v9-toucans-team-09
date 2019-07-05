@@ -40,6 +40,12 @@ You can review the site [coming soon](https://docs.google.com/presentation/d/11z
 
 * Carousel with swiper [https://idangero.us/swiper/](https://idangero.us/swiper/)
 
+* Flex Navbar [How to build a Navigation Bar with CSS Flexbox](https://freshman.tech/flexbox-navbar/)
+
+* [helpful](https://blog.christopherianmurphy.com/2016/01/responsive-pure-css-menu/)
+
+* Excellent article [see this](https://internetingishard.com/html-and-css/flexbox/)
+
 ## Screenshot
 
 ![homepage coming soon]()

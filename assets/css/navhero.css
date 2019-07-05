@@ -30,10 +30,16 @@ h6 {
 }
 
 /* Paskwa Tue Jun 11 */
+
+/* Updated Thu Jul 4*/
+
 .nav-container {
   width: 100%;
   /* background: black; */
   max-height: 150px;
+  display: flex; /* lay out the elements in the navigation container with Flexbox */
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 nav {
@@ -41,9 +47,9 @@ nav {
   width: 100%;
   margin: 0 auto;
   padding-top: 20px;
-
-  display: grid;
-  grid-template-columns: 7vw 4fr auto 2fr 1fr 2vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 nav a {
@@ -71,11 +77,15 @@ nav a {
 } */
 
 .left-menu {
-  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #right-menu {
-  grid-column: 4;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
 
 .hamburger {
