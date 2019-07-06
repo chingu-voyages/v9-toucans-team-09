@@ -175,22 +175,33 @@ nav a {
     padding: 0%;
   }
 
+  .nav-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .nav {
     display: flex;
     justify-content: flex-end;
-    width: 100%;
     margin: 0;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .left-menu {
+
+  #lmenu-items {
     display: none;
   }
 
+  #responsive-logo {
+    src: url('../logos/spring-black.svg');
+  }
   #right-menu {
     display: flex;
   }
 
   #donate {
-    align-self: flex-end;
+    justify-content: flex-end;
   }
 
   #fundraise {
@@ -221,7 +232,11 @@ nav a {
   #hero-section {
     font-size: 70%;
   }
-}
+
+  .dropdown:hover .dropdown-content {
+    visibility: hidden;
+  }
+} /* end of media query max-width 1024 */
 
 /* ~~~~~~~~~~~~~Paskwa Fri June 21~~~~~~~~~~ */
 
