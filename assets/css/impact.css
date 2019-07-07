@@ -1,13 +1,11 @@
 #water-impact {
   display: grid;
-  /* grid-template-rows: minmax(40vh 70vh); */
-  /* max-height: 1010px; */
 }
 
 #water-cards {
   display: grid;
   /* grid-template-columns: repeat(3, calc(100% / 3)); */
-  grid-template-rows: minmax(40vh, 100vh);
+  grid-template-rows: minmax(5vh, 100vh);
   background-color: #fafafa;
   background-image: url('../background images/impact-large.jpg');
   background-position: bottom;
@@ -26,18 +24,22 @@
 
 .impact-private {
   font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 #hundred {
   position: relative;
-  bottom: 35rem;
+  bottom: 15rem;
+}
+
+#hundred a {
+  color: blue;cd
 }
 /* 100% impact section */
 
 .h2-impact {
   display: block;
   font-size: 35px;
+  margin-top: 0;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
   margin-inline-start: 0px;
@@ -45,7 +47,6 @@
   font-weight: bold;
   padding: 60px 20px 0;
   margin: 0 159px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .impactcard-img {
@@ -53,12 +54,6 @@
   height: 200px;
   margin: 5px auto;
 }
-
-/* .impact-card {
-  border: solid 2px lightgrey;
-  width: 150px;
-  border-radius: 4px;
-} */
 
 .impact-list .cta {
   margin-top: auto;
@@ -86,7 +81,7 @@
 
 .slider-viewer {
   position: relative;
-
+  z-index: -1;
   overflow: scroll;
   height: 400px;
 }
@@ -100,7 +95,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 15%;
+  margin-top: 20%;
 }
 
 .slide {
@@ -113,7 +108,7 @@
   border-radius: 4px;
   transition: border-color 0.15s linear;
   align-items: center;
-  opacity: 0.35;
+  opacity: 0.55;
   text-align: center;
   font-size: 16px;
   z-index: 2;
@@ -132,14 +127,6 @@
   left: 65%;
 }
 
-/* .slide:nth-child(2) {
-  opacity: 1;
-  border: 2px solid lightgray;
-  transition: border-color 0.15s linear;
-  z-index: 2;
-  transform: scale(1.1);
-} */
-
 .impactcard-img {
   width: 200px;
   height: 200px;
@@ -157,8 +144,14 @@
   opacity: 1;
   border: 2px solid lightgray;
   transition: border-color 0.15s linear;
-  z-index: 5;
+  z-index: 3;
   transform: scale(1.1);
+}
+
+.shrink-card {
+  transform: scale(0.9);
+  z-index: 1;
+  opacity: 0.45;
 }
 
 /* End of Paskwa Tue June 25 */

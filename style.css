@@ -15,8 +15,8 @@ main {
 }
 
 section {
-    padding-left: 10vw;
-    padding-right: 10vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 button {
@@ -49,197 +49,197 @@ button {
 /*email section*/
 
 .mailing-list {
-    background-color: rgb(255, 202, 11);
-    display: grid;
-    place-items: center;
-    position: relative;
+  background-color: rgb(255, 202, 11);
+  display: grid;
+  place-items: center;
+  position: relative;
 }
 .mailing-list form {
-    margin: 25px 0px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  margin: 25px 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .mailing-list form input {
-    padding: 15px 20px;
-    line-height: 1.2em;
-    margin-left: -1px;
-    font-size: 1.2em;
+  padding: 15px 20px;
+  line-height: 1.2em;
+  margin-left: -1px;
+  font-size: 1.2em;
 }
 .mailing-list form button {
-    background-color: rgb(144, 101, 190);
+  background-color: rgb(144, 101, 190);
 }
 .mailing-list .media {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0;
-    place-content: center;
-    font-size: 1.5em;
-    background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  place-content: center;
+  font-size: 1.5em;
+  background-color: #fff;
 }
 
 /*MEDIA QUERY*/
-@media (max-width: 938px){
-    .mailing-list .media {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
+@media (max-width: 938px) {
+  .mailing-list .media {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 /*END*/
 
 .mailing-list .media .video {
-    background-image: url("assets/images/video.jpg");
-    background-size: cover;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    min-height: 300px;
-    width: auto;
-    display: grid;
-    place-items: center;
+  background-image: url('assets/images/video.jpg');
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  width: auto;
+  display: grid;
+  place-items: center;
 }
-.mailing-list .media a, a:visited {
-    text-decoration: none;
-    outline: none;
-    color: rgb(255, 255, 255);
+.mailing-list .media a,
+a:visited {
+  text-decoration: none;
+  outline: none;
+  color: rgb(255, 255, 255);
 }
 .mailing-list .media .video i {
-    font-size: 24px;
-    color: rgb(255, 255, 255);
+  font-size: 24px;
+  color: rgb(255, 255, 255);
 }
 .mailing-list .media .media-info {
-    padding: 15px 55px;
-    font-size: 32px;
-    font-weight: 500;
+  padding: 15px 55px;
+  font-size: 32px;
+  font-weight: 500;
 }
 .mailing-list .media .media-info h6 {
-    margin-bottom: -15px;
+  margin-bottom: -15px;
 }
 .mailing-list .media button {
-    color: rgb(0, 0, 0);
-    border: 2px solid;
-    margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+  border: 2px solid;
+  margin-bottom: 20px;
 }
 #short-scribble {
-    background-image: url("assets/images/scribble-short.png");
-    background-position: center;
-    background-size: contain;
-    padding: .2em;
+  background-image: url('assets/images/scribble-short.png');
+  background-position: center;
+  background-size: contain;
+  padding: 0.2em;
 }
 #long-scribble {
-    background-image: url("assets/images/scribble-long.png");
-    background-position: center;
-    background-size: contain;
-    padding: .2em;
+  background-image: url('assets/images/scribble-long.png');
+  background-position: center;
+  background-size: contain;
+  padding: 0.2em;
 }
 .mailing-list #cta {
-    max-width: 350px;
-    font-size: 1.3em;
-    line-height: 1.5em;
+  max-width: 350px;
+  font-size: 1.3em;
+  line-height: 1.5em;
 }
 .mailing-list div {
-    -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
-    clip-path: polygon(50% 100%, 0 0, 100% 0);
-    background-color: rgb(255, 202, 11);
-    width: 15px;
-    height: 15px;
-    bottom: -13px;
-    position: absolute;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  background-color: rgb(255, 202, 11);
+  width: 15px;
+  height: 15px;
+  bottom: -13px;
+  position: absolute;
 }
 /*end email*/
 
 /*call to action section*/
 .cta {
-    padding: 0;
-    margin-top: 50px;
+  padding: 0;
+  margin-top: 50px;
 }
 .cta .cards {
-    display: grid; 
-    /*grid-template-columns: repeat(3, calc(100% / 3));
+  display: grid;
+  /*grid-template-columns: repeat(3, calc(100% / 3));
     grid-template-rows: minmax(40vh, 100%);*/
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 10px;
-    background-color: rgb(255, 255, 255);
-
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+  background-color: rgb(255, 255, 255);
 }
 .cta .cards article {
-    color: rgb(255, 255, 255);
-    font-size: 1.3em;
-    display: flex;
-    flex-direction: column;
+  color: rgb(255, 255, 255);
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: column;
 }
-.cta .cards article .inner-content{
-    flex-basis: 1 1 auto;
+.cta .cards article .inner-content {
+  flex-basis: 1 1 auto;
 }
 .cta .cards img {
-    max-width: 100%;
-    height: auto;
-    display: inline-block;
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
 }
-.cta .cards p{
-    margin: 20px;
-    padding: 20px;
+.cta .cards p {
+  margin: 20px;
+  padding: 20px;
 }
 .cta .cards button {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .cta .cards #info {
-    background-color: rgb(54, 159, 244);
-    padding-top: 10%;
+  background-color: rgb(54, 159, 244);
+  padding-top: 10%;
 }
-.cta .cards #info button{
-    background-color: rgb(41, 112, 166);
+.cta .cards #info button {
+  background-color: rgb(41, 112, 166);
 }
 .cta .cards #fundraise {
-    background-color: rgb(144, 101, 190);
+  background-color: rgb(144, 101, 190);
 }
-.cta .cards #fundraise button{
-    background-color: rgb(98, 64, 135);
+.cta .cards #fundraise button {
+  background-color: rgb(98, 64, 135);
 }
 .cta .cards #donate {
-    background-color: rgb(142, 212, 204);
+  background-color: rgb(142, 212, 204);
 }
-.cta .cards #donate button{
-    background-color: rgb(71, 173, 160);
+.cta .cards #donate button {
+  background-color: rgb(71, 173, 160);
 }
 .cta .cards #watch {
-    background-color: rgb(254, 129, 57);
+  background-color: rgb(254, 129, 57);
 }
-.cta .cards #watch button{
-    background-color: rgb(211, 89, 19);
+.cta .cards #watch button {
+  background-color: rgb(211, 89, 19);
 }
 .cta .cards #pledge {
-    background-color: rgb(250, 88, 93);
+  background-color: rgb(250, 88, 93);
 }
-.cta .cards #pledge button{
-    background-color: rgb(220, 38, 46);
+.cta .cards #pledge button {
+  background-color: rgb(220, 38, 46);
 }
 .cta .cards #monthly {
-    background-color: rgb(227, 243, 250);
-    color: rgb(0, 0, 0);
+  background-color: rgb(227, 243, 250);
+  color: rgb(0, 0, 0);
 }
 .cta .cards #monthly img {
-    margin: 25% 15% 5px 15%;
+  margin: 25% 15% 5px 15%;
 }
-.cta .cards #monthly button{
-    background-color: rgb(1, 172, 127);
+.cta .cards #monthly button {
+  background-color: rgb(1, 172, 127);
 }
 .cta .sponsor {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: minmax(90vh, auto);
-    background-image: url("assets/background images/cta-large.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    place-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(90vh, auto);
+  background-image: url('assets/background images/cta-large.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  place-items: center;
 }
-.cta .sponsor article{
-    grid-column: 2/4;
-    font-size: 1.3em;
+.cta .sponsor article {
+  grid-column: 2/4;
+  font-size: 1.3em;
 }
 .cta .sponsor button {
-    background-color: rgb(54, 159, 244);
+  background-color: rgb(54, 159, 244);
 }
 /*end call to action*/
 
@@ -250,42 +250,40 @@ button {
 
 .promo article {
   grid-column-start: 2;
-
 }
 
 /*footer section*/
 
 footer {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 footer .bottom-navigation {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
 }
 footer ul {
-    list-style: none;
+  list-style: none;
 }
-footer .bottom-navigation ul{
-    text-align: left;
+footer .bottom-navigation ul {
+  text-align: left;
 }
 footer .bottom-navigation ul li:nth-child(1) {
-    font-weight: bold;
+  font-weight: bold;
 }
 footer section .wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
-footer .wrapper .row{
-    display: flex;
+footer .wrapper .row {
+  display: flex;
 }
-footer .wrapper select{
-    place-self: center;
+footer .wrapper select {
+  place-self: center;
 }
 footer .icons li {
-    padding: 10px;
+  padding: 10px;
 }
 
 /*end footer*/
-
