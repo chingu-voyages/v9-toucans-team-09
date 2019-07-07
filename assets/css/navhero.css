@@ -1,38 +1,48 @@
 /* Paskwa Tue Jun 11 */
+
 #hero-section h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-weight: 500;
+  font-weight: 300;
   line-height: 1.1em;
 }
 
 #hero-section h1 {
   font-size: 28px;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 #hero-section p {
   font-size: 19px;
   background-color: none;
+  padding-top: 19px;
+  padding-bottom: 10px;
 }
 /* Paskwa Tue June 11 */
 
 #hero-section {
   background-color: transparent;
+  margin-top: 2%;
 }
 
 #hero-article {
   background-color: transparent;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
 }
 
 /* Paskwa Tue Jun 11 */
+
+/* Updated Thu Jul 4*/
+
 .nav-container {
-  width: 100%;
-  /* background: black; */
   max-height: 150px;
 }
 
@@ -41,63 +51,68 @@ nav {
   width: 100%;
   margin: 0 auto;
   padding-top: 20px;
-
-  display: grid;
-  grid-template-columns: 7vw 4fr auto 2fr 1fr 2vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 nav a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-}
-
-#logo img {
-  /* text-transform: lowercase;
-  font-family: 'Times New Roman', Times, serif;
-  font-stretch: expanded;
-  font-weight: bold; */
-  /* margin-top: 40px; */
-  width: 138px;
   font-size: 12px;
-  height: 23px;
+  /* font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold; */
 }
 
-/* .nav-logo {
-  width: 138px;
-  height: 23px;
-} */
+#responsive-logo {
+  display: block;
+  align-items: center;
+  alt: 'charity water logo';
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url('../logos/logo-white.png') no-repeat;
+  width: 138px; /*Width of new image */
+  height: 23px; /*Height of new image */
+  background-position: bottom;
+  background-size: cover;
+  padding-left: 138px; /*Equal to width of new image */
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
 
 .left-menu {
-  grid-column: 2;
+  justify-content: center;
 }
 
 #right-menu {
-  grid-column: 4;
+  justify-content: right;
 }
 
-.hamburger {
-  grid-column: 5;
+#hamburger {
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
   justify-self: end;
+  display: none;
 }
 
 #navhero-wrapper {
   background-image: url('../background images/hero.jpg');
-  background-position: center;
+  background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+  width: 100%;
 }
 
 .menu a {
   /* padding: 20px 0; */
   margin-left: 15px;
   font-size: 14px;
-  font-weight: bold;
   letter-spacing: 0.5px;
 }
 
@@ -110,15 +125,21 @@ nav a {
   letter-spacing: 0.1em;
   font-size: 15px;
   font-weight: 500;
-  display: inline-block;
 }
 
 #right-menu button {
   border: solid 1px white;
-  /* border-radius: 4px; */
+  border-radius: 4px;
   background-color: transparent;
   letter-spacing: 1px;
   font-size: 12px;
+  margin-left: 5px;
+  padding: 5px 7px;
+  /* display: inline-block; */
+  align-content: center;
+  /* margin: 0; */
+  height: 38px;
+  letter-spacing: 0.1em;
 }
 
 #spring-img {
@@ -128,12 +149,14 @@ nav a {
   width: 200px;
   height: 55px;
   padding-top: 0;
-  /* margin-top: 20px; */
-  margin: 0 auto;
+  margin: 20px auto 20px auto;
+  /* margin: 0 auto; */
 }
 
 #spring-btn {
   background-color: #00ac77;
+  margin-top: 10px;
+  margin-bottom: 4%;
 }
 
 /* #water-impact {
@@ -142,72 +165,139 @@ nav a {
   border: solid 10px red;
 } */
 
+/* Mobile Menu */
+
+#mobile-menu {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-content: flex-end;
+  background-color: #fff;
+  position: absolute;
+  top: 2%;
+  z-index: 3;
+}
+
 /* Paskwa Tue Jun 11 */
 
 /* MEDIA QUERIES  /* Paskwa Tue Jun 11 */
 @media screen and (max-width: 1024px) {
-  /* .wrapper {
-    background-color: aliceblue;
-    background-image: url ();
-  } */
-
   #navhero-wrapper {
-    background-color: azure;
+    background-color: aliceblue;
+    background-image: url('../background images/hero-mobile.jpg');
     background-position: bottom;
     background-repeat: no-repeat;
-    background-image: url();
-    background-size: cover;
-    content: '';
+    background-size: contain;
     height: 100%;
     width: 100%;
-    display: grid;
-    /* grid-template-rows: 3 1fr; */
+  }
+
+  #hamburger {
+    display: block;
+    color: black;
   }
 
   .hero {
     display: grid;
-    /* grid-template-columns: 1fr; */
-    background-color: azure;
-    background-position: top;
-    background-repeat: no-repeat;
-    /* background-image: url('./background images/hero-mobile.jpg'); */
-    background-image: url('../background images/hero-mobile.jpg');
-    background-size: contain;
-    content: '';
-    height: 100%;
-    width: 100%;
+    grid-template-columns: 1fr;
   }
-
-  .hero article {
+  #hero-article {
     /*example color*/
     /* background-color: rgb(92, 105, 101); */
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+    padding: 0%;
   }
 
-  .left-menu {
-    grid-row: 2;
-    grid-column: 2 / 5;
-    background-color: #000;
+  .nav-container {
+    display: flex;
+    justify-content: flex-end;
   }
 
-  .left-menu a {
-    grid-template-columns: 1fr;
-    height: calc(80vh - 70px);
-    align-content: space-evenly;
-    color: #fff;
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .spring-img {
-    background-image: url('../images/_spring-logo.svg');
+  #lmenu-items {
+    display: none;
+  }
+
+  #responsive-logo {
+    display: block;
+    align-items: center;
+    alt: 'charity water logo';
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url('../logos/logo-black.png') no-repeat;
+    width: 138px; /*Width of new image */
+    height: 23px; /*Height of new image */
+    background-position: bottom;
+    background-size: cover;
+    padding-left: 138px; /*Equal to width of new image */
+  }
+  #right-menu {
+    display: flex;
+  }
+
+  #donate {
+    justify-content: flex-end;
+  }
+
+  #right-menu button {
+    border: solid 1px black;
+    border-radius: 4px;
+    background-color: transparent;
+    letter-spacing: 1px;
+    font-size: 12px;
+    margin-left: 5px;
+    padding: 5px 7px;
+    /* display: inline-block; */
+    align-content: center;
+    /* margin: 0; */
+    height: 38px;
+    letter-spacing: 0.1em;
+    color: black;
+  }
+
+  #fundraise {
+    display: none;
+  }
+
+  #sign-in {
+    display: none;
+  }
+  #spring-img {
+    background-image: url('../logos/spring-black.svg');
     background-repeat: no-repeat;
     background-position: bottom;
     width: 200px;
     height: 85px;
     /* margin-top: 20px; */
-    margin: 0 auto;
+    margin: 20px auto 20px auto;
   }
-}
+
+  #spring-btn {
+    margin-bottom: 2%;
+  }
+
+  .hero {
+    display: flex;
+  }
+
+  #hero-section {
+    font-size: 70%;
+  }
+
+  .dropdown:hover .dropdown-content {
+    visibility: hidden;
+  }
+} /* end of media query max-width 1024 */
 
 /* ~~~~~~~~~~~~~Paskwa Fri June 21~~~~~~~~~~ */
 
@@ -252,3 +342,45 @@ nav a {
 }
 
 /* +++++++++++++end of Paskwa Fri June 21 */
+
+/* Paskwa added @Elisheba's code */
+/* DROPDOWN MENU*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 250px;
+  z-index: 1;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-triangle {
+  -webkit-clip-path: polygon(0% 87%, 50% 0%, 50% 0%, 100% 87%);
+  clip-path: polygon(0% 87%, 50% 0%, 50% 0%, 100% 87%);
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 15px;
+  height: 12px;
+  top: -10px;
+  left: 30px;
+  position: absolute;
+  z-index: 1;
+}
+.dropdown-content a:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* End of drop-down menu */
