@@ -279,8 +279,32 @@ footer section .wrapper {
 footer .wrapper .row {
   display: flex;
 }
-footer .wrapper select {
+footer .wrapper .flag {
   place-self: center;
+  grid-column-start: 2/4;
+  background-image: url("assets/images/flag.svg");
+  background-position: 5px 50%;
+  background-repeat: no-repeat;
+  width: 60%;
+  border: 1px solid rgb(193, 193, 186);
+  border-radius: 4px;
+  padding: 10px;
+  margin-right: 5px;
+}
+footer .wrapper .flag .select-css {
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+  font-size: 16px;
+  line-height: 1.3;
+  width: 90%;
+  float: right;
+  background-image: url("assets/images/selector-arrow.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 5%;
+  position: relative;
+  border: none;
 }
 footer .icons li {
   padding: 10px;
