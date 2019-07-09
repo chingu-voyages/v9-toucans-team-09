@@ -101,3 +101,15 @@ function checkKey(event) {
       break;
   }
 }
+
+function mobileMenu() {
+  var x = document.getElementById('mobileLinks');
+  var y = document.getElementById('hamburger');
+  if (x.style.display === 'flex') {
+    x.style.display = 'none';
+    y.style.justifySelf = 'right';
+  } else {
+    x.style.display = 'flex';
+    y.style.justifySelf = 'center';
+  }
+}

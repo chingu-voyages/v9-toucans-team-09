@@ -1,9 +1,8 @@
-function classToggle() {
-  const navs = document.querySelectorAll('.Navbar__Items');
-
-  navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+function mobileMenu() {
+  var x = document.getElementById('mobileLinks');
+  if (x.style.display === 'block') {
+    x.style.display = 'none';
+  } else {
+    x.style.display = 'block';
+  }
 }
-
-document
-  .querySelector('.Navbar__Link-toggle')
-  .addEventListener('click', classToggle);

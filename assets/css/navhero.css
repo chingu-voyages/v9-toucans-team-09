@@ -96,8 +96,7 @@ nav a {
 #hamburger {
   color: white;
   font-size: 2rem;
-  justify-self: end;
-  display: none;
+  display: block;
 }
 
 #navhero-wrapper {
@@ -167,15 +166,69 @@ nav a {
 
 /* Mobile Menu */
 
-#mobile-menu {
-  height: 100%;
-  width: 30%;
+.mobile-dropdown {
+  /* position: relative; */
   display: flex;
-  align-content: flex-end;
+  flex-direction: column;
+  /* justify-content: end; */
+  min-width: 50%;
   background-color: #fff;
-  position: absolute;
-  top: 2%;
-  z-index: 3;
+  margin-top: 0%;
+  margin-right: -20px;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  /* min-height: 100%;
+  min-width: 70%; */
+  /* display: inline-block;
+  justify-items: center;
+  background-color: #fff; */
+  /* position: absolute;
+  top: 0;
+  right: 0; */
+  /* margin-left: 0; */
+  /* z-index: 3; */
+}
+
+.mobile-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#mobilesign-in {
+  max-width: 60%;
+  display: inline-block;
+  /* align-content: center;
+  justify-items: center; */
+  font-size: 12px;
+  padding: 0;
+  height: 30px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  /*margin: 20px auto 20px 0px;  Top, Right, Bottom, Left*/
+  background-color: #369ff4;
+  color: #fff;
+  transition: background-color 0.15s;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.mobilemenu-items a {
+  color: black;
+  font-size: 14px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: left;
+  border-bottom: 1px solid gainsboro;
+  width: 100%;
+  text-transform: none;
 }
 
 /* Paskwa Tue Jun 11 */
@@ -212,16 +265,10 @@ nav a {
 
   .nav-container {
     display: flex;
-    justify-content: flex-end;
   }
 
   .nav {
     display: flex;
-    justify-content: flex-end;
-    margin: 0;
-    max-width: 980px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   #lmenu-items {
@@ -229,7 +276,7 @@ nav a {
   }
 
   #responsive-logo {
-    display: block;
+    display: flex;
     align-items: center;
     alt: 'charity water logo';
     -moz-box-sizing: border-box;
@@ -246,7 +293,7 @@ nav a {
   }
 
   #donate {
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
   }
 
   #right-menu button {
@@ -257,9 +304,7 @@ nav a {
     font-size: 12px;
     margin-left: 5px;
     padding: 5px 7px;
-    /* display: inline-block; */
     align-content: center;
-    /* margin: 0; */
     height: 38px;
     letter-spacing: 0.1em;
     color: black;
