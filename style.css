@@ -261,6 +261,7 @@ footer {
 }
 footer .bottom-navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   padding-top: 50px;
 }
@@ -281,6 +282,16 @@ footer section .wrapper {
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
+/*MEDIA QUERIES*/
+@media (max-width: 938px){
+  footer section .wrapper {
+  grid-template-columns: 1fr;
+}
+  footer .wrapper .row {
+    justify-content: center;
+}
+}
+/*END*/
 footer .wrapper .row {
   display: flex;
 }
