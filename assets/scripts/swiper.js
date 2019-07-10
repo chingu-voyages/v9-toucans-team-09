@@ -103,7 +103,7 @@ function checkKey(event) {
 }
 
 function mobileMenu() {
-  var x = document.getElementById('mobileLinks');
+  var x = document.getElementById('mobile-dropdown');
   var y = document.getElementById('hamburger');
   if (x.style.display === 'flex') {
     x.style.display = 'none';

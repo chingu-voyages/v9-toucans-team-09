@@ -96,7 +96,7 @@ nav a {
 #hamburger {
   color: white;
   font-size: 2rem;
-  display: block;
+  display: none;
 }
 
 #navhero-wrapper {
@@ -166,68 +166,34 @@ nav a {
 
 /* Mobile Menu */
 
-.mobile-dropdown {
-  /* position: relative; */
+#mobile-dropdown {
+  position: relative;
+  display: none;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.mobiledropdown-content {
+  position: absolute;
   display: flex;
+  justify-content: flex-end;
   flex-direction: column;
-  /* justify-content: end; */
-  min-width: 50%;
+  min-height: 100%;
+  max-width: 100%;
+  width: 100%;
   background-color: #fff;
-  margin-top: 0%;
-  margin-right: -20px;
-}
-
-.mobile-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-content: flex-start;
-  /* min-height: 100%;
-  min-width: 70%; */
-  /* display: inline-block;
-  justify-items: center;
-  background-color: #fff; */
-  /* position: absolute;
-  top: 0;
-  right: 0; */
-  /* margin-left: 0; */
-  /* z-index: 3; */
-}
-
-.mobile-menu {
-  list-style-type: none;
-  padding: 0;
   margin: 0;
 }
 
-#mobilesign-in {
-  max-width: 60%;
-  display: inline-block;
-  /* align-content: center;
-  justify-items: center; */
-  font-size: 12px;
-  padding: 0;
-  height: 30px;
-  line-height: 30px;
-  letter-spacing: 1px;
-  border-radius: 4px;
-  /*margin: 20px auto 20px 0px;  Top, Right, Bottom, Left*/
-  background-color: #369ff4;
-  color: #fff;
-  transition: background-color 0.15s;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.mobilemenu-items a {
+.mobiledropdown-content a {
   color: black;
   font-size: 14px;
   padding: 12px 16px;
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   text-align: left;
   border-bottom: 1px solid gainsboro;
-  width: 100%;
+  /* max-width: 400px; */
   text-transform: none;
 }
 
@@ -314,9 +280,25 @@ nav a {
     display: none;
   }
 
-  #sign-in {
+  .sign-in {
     display: none;
   }
+
+  #mobilesign-in {
+    font-size: 12px;
+    padding: 0;
+    height: 30px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    /*margin: 20px auto 20px 0px; Top, Right, Bottom, Left*/
+    background-color: #369ff4;
+    color: #fff;
+    transition: background-color 0.15s;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
   #spring-img {
     background-image: url('../logos/spring-black.svg');
     background-repeat: no-repeat;
