@@ -32,18 +32,11 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.hero article {
-  /*example color*/
-  background-color: rgb(92, 105, 101);
-}
 
 .impact .cards {
   display: grid;
   grid-template-columns: repeat(3, calc(100% / 3));
   grid-template-rows: minmax(40vh, 100%);
-
-  /*example color*/
-  background-color: rgb(92, 105, 101);
 }
 
 /*email section*/
