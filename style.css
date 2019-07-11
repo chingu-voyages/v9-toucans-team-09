@@ -156,12 +156,25 @@ a:visited {
 }
 .cta .cards {
   display: grid;
-  /*grid-template-columns: repeat(3, calc(100% / 3));
-    grid-template-rows: minmax(40vh, 100%);*/
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-template-rows: auto;
   grid-gap: 10px;
   background-color: rgb(255, 255, 255);
 }
+
+/*MEDIA QUERIES*/
+@media (max-width: 1040px){
+  .cta .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 740px){
+  .cta .cards {
+    grid-template-columns: 1fr;
+  }
+}
+/*END*/
+
 .cta .cards article {
   color: rgb(255, 255, 255);
   font-size: 1.3em;
@@ -190,16 +203,16 @@ a:visited {
 .cta .cards #info button {
   background-color: rgb(41, 112, 166);
 }
-.cta .cards #fundraise {
+.cta .cards #cta-fundraise {
   background-color: rgb(144, 101, 190);
 }
-.cta .cards #fundraise button {
+.cta .cards #cta-fundraise button {
   background-color: rgb(98, 64, 135);
 }
-.cta .cards #donate {
+.cta .cards #cta-donate {
   background-color: rgb(142, 212, 204);
 }
-.cta .cards #donate button {
+.cta .cards #cta-donate button {
   background-color: rgb(71, 173, 160);
 }
 .cta .cards #watch {
