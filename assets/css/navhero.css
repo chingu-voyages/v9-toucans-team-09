@@ -209,6 +209,10 @@ nav a {
   margin: 20px;
 }
 
+#main-content {
+  transition: margin-right 0.5s;
+}
+
 /* Paskwa Tue Jun 11 */
 
 /* MEDIA QUERIES  /* Paskwa Tue Jun 11 */
