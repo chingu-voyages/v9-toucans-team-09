@@ -2,7 +2,7 @@
 
 This is a clone of charitywater.org home page using CSS-Grid and Flexbox for the layout, jQuery and JavaScript for the carousel animation.
 
-The site is available at [https://chingu-voyages.github.io/v9-toucans-team-09/]https://chingu-voyages.github.io/v9-toucans-team-09/
+The site is available [https://chingu-voyages.github.io/v9-toucans-team-09/](https://chingu-voyages.github.io/v9-toucans-team-09/)
 
 # Goal
 
