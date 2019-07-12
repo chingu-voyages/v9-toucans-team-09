@@ -1,6 +1,8 @@
 # v9-toucans-team-09
 
-Add-project-description-here | Voyage-9 | https://chingu.io/
+This is a clone of charitywater.org home page using CSS-Grid and Flexbox for the layout, jQuery and JavaScript for the carousel animation.
+
+The site is available at [https://chingu-voyages.github.io/v9-toucans-team-09/]https://chingu-voyages.github.io/v9-toucans-team-09/
 
 # Goal
 
@@ -46,9 +48,9 @@ You can review the site [coming soon](https://docs.google.com/presentation/d/11z
 
 * Excellent article [see this](https://internetingishard.com/html-and-css/flexbox/)
 
-## Screenshot
+## Link to demo page
 
-![homepage coming soon]()
+[homepage](https://chingu-voyages.github.io/v9-toucans-team-09/)
 
 ## Contributors
 
