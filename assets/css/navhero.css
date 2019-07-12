@@ -40,21 +40,15 @@ h6 {
 
 /* Paskwa Tue Jun 11 */
 
-/* Updated Thu Jul 4*/
-
-.nav-container {
-  max-height: 150px;
-}
+/* Updated Fri Jul 12*/
 
 nav {
-  /* max-width: 1720px; */
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
+  padding-top: 20px;
 }
 
 nav a {
@@ -62,8 +56,6 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 12px;
-  /* font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold; */
 }
 
 #responsive-logo {
@@ -110,7 +102,6 @@ nav a {
 }
 
 .menu a {
-  /* padding: 20px 0; */
   margin-left: 15px;
   font-size: 14px;
   letter-spacing: 0.5px;
@@ -135,9 +126,7 @@ nav a {
   font-size: 12px;
   margin-left: 5px;
   padding: 5px 7px;
-  /* display: inline-block; */
   align-content: center;
-  /* margin: 0; */
   height: 38px;
   letter-spacing: 0.1em;
 }
@@ -159,25 +148,71 @@ nav a {
   margin-bottom: 4%;
 }
 
-/* #water-impact {
-  background-color: #00ac77;
-  background-origin: padding-box;
-  border: solid 10px red;
-} */
-
 /* Mobile Menu */
 
-#mobile-menu {
+#mobile-nav {
   height: 100%;
-  width: 30%;
-  display: flex;
-  align-content: flex-end;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
   background-color: #fff;
-  position: absolute;
-  top: 2%;
-  z-index: 3;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
+.side-nav a {
+  /* padding: 8px 8px 8px 32px; */
+  text-align: left;
+  text-decoration: none;
+  font-size: 18px;
+  color: #333232;
+  display: block;
+  transition: 0.3s;
+  /* border-top: 1px solid #ebebeb; */
+  border-bottom: 1px solid #ebebeb;
+  padding: 12px 16px;
+  line-height: 2rem;
+}
+
+.side-nav a:hover {
+  color: #f1f1f1;
+}
+
+.side-nav #close {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#close {
+  border-bottom: none;
+}
+
+#mobile-login {
+  font-size: 14px;
+  padding: 10px;
+  height: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  width: 90%;
+  background-color: #369ff4;
+  color: #fff;
+  transition: background-color 0.15s linear;
+  text-align: center;
+  margin: 20px;
+}
+
+#main-content {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
 /* Paskwa Tue Jun 11 */
 
 /* MEDIA QUERIES  /* Paskwa Tue Jun 11 */
@@ -302,9 +337,6 @@ nav a {
 /* ~~~~~~~~~~~~~Paskwa Fri June 21~~~~~~~~~~ */
 
 #promo-section {
-  /* border: #00ac77 solid 10px; */
-  /* padding-left: 10vw;
-  padding-right: 10vw; */
   padding: 0;
   max-width: 920px;
   margin: 0 auto;

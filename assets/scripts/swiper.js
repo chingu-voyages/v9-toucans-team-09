@@ -27,6 +27,16 @@ $($thirdCard).on('keyup', checkKey);
 //Mobile Menu
 function showMenu() {}
 
+function openNav() {
+  document.getElementById('mobile-nav').style.width = '250px';
+  document.getElementById('main-content').style.marginRight = '250px';
+}
+
+function closeNav() {
+  document.getElementById('mobile-nav').style.width = '0';
+  document.getElementById('main-content').style.marginLeft = '0';
+}
+
 function initCards() {
   // remove active-card class from first and last cards. Make 2nd card active
   $($firstCard).removeClass('active-card');
