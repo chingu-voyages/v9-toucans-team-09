@@ -29,7 +29,7 @@
 
 <body>
     <!-- <header class="navigation">Header Placeholder</header> -->
-    <main>
+    <main id="main-content"> <!--Paskwa - added main-content id for mobile nav Fri 12-Jul-->
         <!-- Paskwa - Tue Jul 11 -->
         <div id="navhero-wrapper">
             <div class="nav-container">
@@ -67,15 +67,26 @@
                                 <a href="#">PLEDGE YOUR BIRTHDAY</a>
                             </div>
                         </div>
-                        <a id="hamburger" href="#" class="icon" onclick="myFunction()">
+                        <a id="hamburger" href="#" class="icon" onclick="openNav()">
                             <i class="fa fa-bars"></i>
                         </a>
                         
                         <a id="sign-in" href="#">Sign In</a>
-                        <div class="side-nav"></div>
+                        
                     </div>
                 </nav>
-
+<!-- Mobile Nav -->
+<div id="mobile-nav" class="side-nav">
+        <a id = "close" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a id="mobile-login"  href="#">Sign In</a>
+    <a class="mobile-link" href="#">Home</a>
+    <a class="mobile-link" href="#">Donate</a>
+    <a class="mobile-link" href="#">Fundraise</a>
+    <a class="mobile-link" href="#">Why Water?</a>
+    <a class="mobile-link" href="#">Our Work</a>
+    <a class="mobile-link" href="#">About us</a>
+    <a class="mobile-link" href="#">Thirst Book</a>
+</div>
             </div> <!--end of nav container-->
             <section id="hero-section" class="hero">
                 <article id="hero-article">
