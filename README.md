@@ -1,6 +1,6 @@
 # v9-toucans-team-09
 
-Add-project-description-here | Voyage-9 | https://chingu.io/
+This is a clone of charitywater.org home page using CSS-Grid and Flexbox for the layout, jQuery and JavaScript for the carousel animation.
 
 # Goal
 
@@ -26,11 +26,11 @@ Our product Vision summary is available in this [GoogleDoc]().
 ## Technology Used
 
 - HTML/CSS-Grid & FlexBox layout
-- Using JavaScript to manipulate the DOM and event system
+- Using jQuery and JavaScript to manipulate the DOM and event system
 
 ## Demo Page
 
-You can review the site [coming soon](https://docs.google.com/presentation/d/11zPc-5KK27--NxX4eDpvt7wqGYR3uLpaZQ5rBZGI4Cw/edit);
+You can review the site [https://chingu-voyages.github.io/v9-toucans-team-09/](https://chingu-voyages.github.io/v9-toucans-team-09/);
 
 ## Learning Guides
 
