@@ -46,9 +46,9 @@ You can review the site [https://chingu-voyages.github.io/v9-toucans-team-09/](h
 
 * Excellent article [see this](https://internetingishard.com/html-and-css/flexbox/)
 
-## Screenshot
+## Demo Page
 
-![homepage coming soon]()
+[https://chingu-voyages.github.io/v9-toucans-team-09/](https://chingu-voyages.github.io/v9-toucans-team-09/)
 
 ## Contributors
 
